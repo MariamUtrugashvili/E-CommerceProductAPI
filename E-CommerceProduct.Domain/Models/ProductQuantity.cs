@@ -1,6 +1,4 @@
-﻿using E_CommerceProduct.Domain.Product;
-
-namespace E_CommerceProduct.Domain.ProductQuantity
+﻿namespace E_CommerceProduct.Domain.Models
 {
     public class ProductQuantity
     {
@@ -11,6 +9,6 @@ namespace E_CommerceProduct.Domain.ProductQuantity
 
 
         // Navigation property
-        public Product.Product Product { get; set; }
+        public Product Product { get; set; }
     }
 }

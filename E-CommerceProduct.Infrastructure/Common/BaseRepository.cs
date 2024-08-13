@@ -21,7 +21,7 @@ namespace E_CommerceProduct.Infrastructure.Common
         #endregion
 
         #region Methods
-        public async Task<T?> GetAsync(CancellationToken token, params object[] key)
+        public async Task<T> GetAsync(CancellationToken token, params object[] key)
         {
             return await _dbSet.FindAsync(key, token);
         }

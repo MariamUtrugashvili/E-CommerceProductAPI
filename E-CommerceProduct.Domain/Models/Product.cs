@@ -1,11 +1,4 @@
-﻿using E_CommerceProduct.Domain.OrderItems;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace E_CommerceProduct.Domain.Product
+﻿namespace E_CommerceProduct.Domain.Models
 {
     public class Product
     {
@@ -17,7 +10,7 @@ namespace E_CommerceProduct.Domain.Product
         public DateTime UpdatedAt { get; set; }
 
         // Navigation property
-        public List<Category.Category> Categories { get; set; }
-        public List<OrderProduct> OrderItems { get; set; }
+        public List<Category> Categories { get; set; }
+        public List<OrderProduct> OrderProducts { get; set; }
     }
 }
