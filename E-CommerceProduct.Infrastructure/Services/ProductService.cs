@@ -42,6 +42,11 @@ namespace E_CommerceProduct.Infrastructure.Services
             if (await _unitOfWork.ProductRepository.AnyAsync(x => x.Name == product.Name, cancellationToken))
                 throw new AlreadyExistsException("Product with this Name already exist");
 
+            if (!await _unitOfWork.CategoryRepository.AnyAsync(x => x.Name == product.CategoryName, cancellationToken))
+                throw new ItemNotFoundException("This Category was not found");
+
+            var categoryId = await _unitOfWork.CategoryRepository.GetAsync(cancellationToken,product.Name);
+
             var result = product.Adapt<Product>();
             result.Id = Guid.NewGuid();
             result.CreatedAt = DateTime.Now;

@@ -52,3 +52,181 @@ ResponseBody =
 []
 
 
+2024-08-14 14:16:10.847 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 2:16:10 PM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = 
+
+2024-08-14 14:16:11.430 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 2:16:11 PM
+ResponseBody = 
+[{"id":"0474db0d-28e4-4527-b913-d95aa5cea633"
+"name":"Books"}
+{"id":"65de9e5c-09a5-4b93-b86a-8ec5feda6e5c"
+"name":"Clothing"}
+{"id":"f3331a8f-ed82-4cbb-824d-db54ef5a4b7b"
+"name":"Electronics"}
+{"id":"bc409863-41af-4c64-ace2-8f61ddfbe17f"
+"name":"FoodAndBeverages"}
+{"id":"4107c3a1-9686-4e25-9828-ff4001c7c71b"
+"name":"Toys"}]
+
+
+2024-08-14 14:17:00.033 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 2:17:00 PM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = {
+  "name": "Blanket",
+  "price": 35,
+  "imageUrl": "https://th.bing.com/th/id/OIP.kjmDPwOq_ziBdqKQbBZudwAAAA?rs=1&pid=ImgDetMain",
+  "quantity": 5
+}
+
+2024-08-14 14:17:00.624 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 2:17:00 PM
+ResponseBody = 
+
+
+
+2024-08-14 14:18:57.526 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 2:18:57 PM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = 
+
+2024-08-14 14:18:57.692 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 2:18:57 PM
+ResponseBody = 
+[{"id":"e2ee58d2-374b-4fa8-bba4-0af876afca96"
+"name":"Blanket"
+"price":35.00
+"imageUrl":null
+"quantity":5}]
+
+
+2024-08-14 14:20:18.880 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 2:20:18 PM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = 
+
+2024-08-14 14:20:19.551 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 2:20:19 PM
+ResponseBody = 
+[{"id":"e2ee58d2-374b-4fa8-bba4-0af876afca96"
+"name":"Blanket"
+"price":35.00
+"quantity":5}]
+
+
+2024-08-14 14:20:36.246 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 2:20:36 PM
+Address = https
+Path = /api/Product/e2ee58d2-374b-4fa8-bba4-0af876afca96
+IsSecured = True
+RequestBody = 
+
+2024-08-14 14:20:36.471 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 2:20:36 PM
+ResponseBody = 
+No response body
+
+
+2024-08-14 14:21:37.854 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 2:21:37 PM
+Address = https
+Path = /api/Product/e2ee58d2-374b-4fa8-bba4-0af876afca96
+IsSecured = True
+RequestBody = {
+  "name": "Blanket",
+  "price": 45,
+}
+
+2024-08-14 14:21:37.923 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 2:21:37 PM
+ResponseBody = 
+{"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1"
+"title":"One or more validation errors occurred."
+"status":400
+"errors":{"$":["The JSON object contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $ | LineNumber: 3 | BytePositionInLine: 0."]}
+"traceId":"00-bb582bb9a0e107f4f2dbb14d0bfc3db0-2178583e97ccf8b5-00"}
+
+
+2024-08-14 14:21:53.812 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 2:21:53 PM
+Address = https
+Path = /api/Product/e2ee58d2-374b-4fa8-bba4-0af876afca96
+IsSecured = True
+RequestBody = {
+  "name": "Blanket",
+  "price": 45,
+  "imageUrl": 
+}
+
+2024-08-14 14:21:53.820 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 2:21:53 PM
+ResponseBody = 
+{"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1"
+"title":"One or more validation errors occurred."
+"status":400
+"errors":{"$.imageUrl":["'}' is an invalid start of a value. Path: $.imageUrl | LineNumber: 4 | BytePositionInLine: 0."]}
+"traceId":"00-c76a77c2f2c7328f8b3cc3ae239e6ceb-decbf746c5869c48-00"}
+
+
+2024-08-14 14:22:27.215 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 2:22:27 PM
+Address = https
+Path = /api/Product/e2ee58d2-374b-4fa8-bba4-0af876afca96
+IsSecured = True
+RequestBody = {
+  "name": "Blanket",
+  "price": 45,
+  "imageUrl": "https://th.bing.com/th/id/OIP.kjmDPwOq_ziBdqKQbBZudwAAAA?rs=1&pid=ImgDetMain"
+}
+
+2024-08-14 14:22:27.499 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 2:22:27 PM
+ResponseBody = 
+
+
+
+2024-08-14 14:22:33.085 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 2:22:33 PM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = 
+
+2024-08-14 14:22:33.100 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 2:22:33 PM
+ResponseBody = 
+[{"id":"e2ee58d2-374b-4fa8-bba4-0af876afca96"
+"name":"Blanket"
+"price":45.00
+"quantity":5}]
+
+
