@@ -6,6 +6,7 @@ namespace E_CommerceProduct.Application.Common
     {
         Task<T> GetAsync(CancellationToken token, params object[] key);
         Task<List<T>> GetAllAsync(CancellationToken token);
+        Task<TResult> GetPropertyAsync<TResult>(Expression<Func<T, bool>> predicate, Expression<Func<T, TResult>> selector, CancellationToken token);
         Task AddAsync(T entity, CancellationToken token);
         Task<bool> AnyAsync(Expression<Func<T, bool>> predicate, CancellationToken token);
         void Update(T entity, CancellationToken token);

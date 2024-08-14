@@ -11,7 +11,9 @@ namespace E_CommerceProduct.Application.Repositories
 {
     public interface IProductRepository : IBaseRepository<Product> 
     {
-        Task<ProductResponseModel> GetProductAsync(CancellationToken token, params object[] key);
+        Task<ProductResponseModel> GetProductAsync(CancellationToken token, Guid id);
         Task<List<ProductResponseModel>> GetAllProductAsync(CancellationToken token);
+        Task<IEnumerable<ProductDetailsResponseModel>> GetAllProductDetailsAsync(CancellationToken token);
+
     }
 }

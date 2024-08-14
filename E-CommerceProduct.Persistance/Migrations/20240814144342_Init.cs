@@ -47,7 +47,7 @@ namespace E_CommerceProduct.Persistance.Migrations
                     Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -81,24 +81,25 @@ namespace E_CommerceProduct.Persistance.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "ProductCategories",
+                name: "ProductCategory",
                 columns: table => new
                 {
-                    CategoriesId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    ProductsId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
+                    Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    ProductId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
+                    CategoryId = table.Column<Guid>(type: "uniqueidentifier", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_ProductCategories", x => new { x.CategoriesId, x.ProductsId });
+                    table.PrimaryKey("PK_ProductCategory", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_ProductCategories_Categories_CategoriesId",
-                        column: x => x.CategoriesId,
+                        name: "FK_ProductCategory_Categories_CategoryId",
+                        column: x => x.CategoryId,
                         principalTable: "Categories",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_ProductCategories_Products_ProductsId",
-                        column: x => x.ProductsId,
+                        name: "FK_ProductCategory_Products_ProductId",
+                        column: x => x.ProductId,
                         principalTable: "Products",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
@@ -111,7 +112,7 @@ namespace E_CommerceProduct.Persistance.Migrations
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     ProductId = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
-                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    UpdatedAt = table.Column<DateTime>(type: "datetime2", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -129,10 +130,10 @@ namespace E_CommerceProduct.Persistance.Migrations
                 columns: new[] { "Id", "Name" },
                 values: new object[,]
                 {
-                    { new Guid("2146a7d8-866b-4c4f-90d3-60bad08b0986"), "Clothing" },
-                    { new Guid("6ea933f8-cedb-4293-b1a0-7a00929d70cf"), "Books" },
-                    { new Guid("82b1b1aa-5ed3-4f68-983b-1ea828f82409"), "FoodAndBeverages" },
-                    { new Guid("c488870f-2930-4830-bf3b-c62b78cacfda"), "Electronics" }
+                    { new Guid("522d462f-3fed-4639-9690-3be13e747d2c"), "Clothing" },
+                    { new Guid("755f82ae-ef1e-4118-a10d-1f3305133b81"), "Electronics" },
+                    { new Guid("9847f57a-82d4-4d56-8871-ab2ea7a3e08b"), "Books" },
+                    { new Guid("a6655153-d515-4acd-a110-1dac88a38a84"), "FoodAndBeverages" }
                 });
 
             migrationBuilder.CreateIndex(
@@ -157,14 +158,21 @@ namespace E_CommerceProduct.Persistance.Migrations
                 column: "OrderDate");
 
             migrationBuilder.CreateIndex(
-                name: "IX_ProductCategories_ProductsId",
-                table: "ProductCategories",
-                column: "ProductsId");
+                name: "IX_ProductCategory_CategoryId",
+                table: "ProductCategory",
+                column: "CategoryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_ProductCategory_ProductId_CategoryId",
+                table: "ProductCategory",
+                columns: new[] { "ProductId", "CategoryId" },
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_ProductQuantities_ProductId",
                 table: "ProductQuantities",
-                column: "ProductId");
+                column: "ProductId",
+                unique: true);
 
             migrationBuilder.CreateIndex(
                 name: "IX_Products_Name",
@@ -179,7 +187,7 @@ namespace E_CommerceProduct.Persistance.Migrations
                 name: "OrderProducts");
 
             migrationBuilder.DropTable(
-                name: "ProductCategories");
+                name: "ProductCategory");
 
             migrationBuilder.DropTable(
                 name: "ProductQuantities");

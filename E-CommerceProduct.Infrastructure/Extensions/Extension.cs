@@ -28,6 +28,9 @@ namespace E_CommerceProduct.Infrastructure.Extensions
             services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IProductQuantityRepository, ProductQuantityRepository>();
+            services.AddScoped<IProductCategoryRepository, ProductCategoryRepository>();
+            services.AddScoped<IOrderProductRepository, OrderProductRepository>();
+
             return services;
         }
 

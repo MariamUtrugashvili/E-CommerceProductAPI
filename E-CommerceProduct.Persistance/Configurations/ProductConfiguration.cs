@@ -28,10 +28,6 @@ namespace E_CommerceProduct.Persistance.Configurations
 
             builder.Property(x => x.UpdatedAt);
 
-            builder.HasMany(x => x.Categories)
-                   .WithMany(x => x.Products)
-                   .UsingEntity(x => x.ToTable("ProductCategories"));
-
             builder.HasIndex(x => x.Name);
         }
     }

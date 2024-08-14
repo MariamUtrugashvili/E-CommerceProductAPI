@@ -1,0 +1,16 @@
+﻿using E_CommerceProduct.Domain.Enums;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace E_CommerceProduct.Application.ProductCategories.Response
+{
+    public class ProductCategoriesResponseModel
+    {
+        public Guid Id { get; set; }
+        public string ProductName { get; set; }
+        public List<string> CategoryNames { get; set; }
+    }
+}

@@ -8,7 +8,7 @@ namespace E_CommerceProduct.Domain.Models
         public CategoryName Name { get; set; }
 
         // Navigation property
-        public List<Product> Products { get; set; }
+        public List<ProductCategory> ProductCategories { get; set; }
     }
 }
 

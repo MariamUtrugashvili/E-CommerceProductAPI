@@ -230,3 +230,601 @@ ResponseBody =
 "quantity":5}]
 
 
+2024-08-14 18:37:21.133 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 6:37:21 PM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = 
+
+2024-08-14 18:37:21.770 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 6:37:21 PM
+ResponseBody = 
+[{"id":"29c3fffe-1884-43f4-b0df-a7c9e02b4b8c"
+"name":"Books"}
+{"id":"555112c5-f027-40bf-81ca-3db5114bcc9f"
+"name":"Clothing"}
+{"id":"3526f433-1141-4c81-925c-2bb73957b640"
+"name":"Electronics"}
+{"id":"dda644e0-66d8-4b82-b652-89dfb5010fb3"
+"name":"FoodAndBeverages"}
+{"id":"4107c3a1-9686-4e25-9828-ff4001c7c71b"
+"name":"Toys"}]
+
+
+2024-08-14 18:37:40.065 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 6:37:40 PM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = 
+
+2024-08-14 18:37:40.350 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 6:37:40 PM
+ResponseBody = 
+[{"id":"e2ee58d2-374b-4fa8-bba4-0af876afca96"
+"name":"Blanket"
+"price":45.00
+"quantity":5}]
+
+
+2024-08-14 18:39:36.096 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 6:39:36 PM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = {
+  "name": "Jeans",
+  "price": 50,
+  "imageUrl": "https://th.bing.com/th/id/OIP.sV6-lkTmMMBXQlu-FRKPLwHaJ4?rs=1&pid=ImgDetMain",
+  "quantity": 10,
+  "categoryNames": [
+    "Electronics","FoodAndBeverages"
+  ]
+}
+
+2024-08-14 18:39:36.576 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 6:39:36 PM
+ResponseBody = 
+
+
+
+2024-08-14 18:53:46.578 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 6:53:46 PM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = 
+
+2024-08-14 18:53:47.239 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 6:53:47 PM
+ResponseBody = 
+[]
+
+
+2024-08-14 19:32:52.897 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 7:32:52 PM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = 
+
+2024-08-14 19:32:53.520 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 7:32:53 PM
+ResponseBody = 
+[{"id":"9847f57a-82d4-4d56-8871-ab2ea7a3e08b"
+"name":"Books"}
+{"id":"522d462f-3fed-4639-9690-3be13e747d2c"
+"name":"Clothing"}
+{"id":"755f82ae-ef1e-4118-a10d-1f3305133b81"
+"name":"Electronics"}
+{"id":"a6655153-d515-4acd-a110-1dac88a38a84"
+"name":"FoodAndBeverages"}]
+
+
+2024-08-14 19:33:05.420 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 7:33:05 PM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = {
+  "name": "Kindle Paperwhite",
+  "price": 120,
+  "imageUrl": "https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600",
+  "quantity": 20,
+  "categoryNames": [
+    "Electronics","Books"
+  ]
+}
+
+2024-08-14 19:33:06.249 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 7:33:06 PM
+ResponseBody = 
+
+
+
+2024-08-14 19:33:13.374 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 7:33:13 PM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = 
+
+2024-08-14 19:33:13.504 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 7:33:13 PM
+ResponseBody = 
+[{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"Kindle Paperwhite"
+"price":120.00
+"quantity":20}]
+
+
+2024-08-14 19:33:22.685 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 7:33:22 PM
+Address = https
+Path = /api/Product/ProductDetails
+IsSecured = True
+RequestBody = 
+
+2024-08-14 19:33:22.791 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 7:33:22 PM
+ResponseBody = 
+[{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"Kindle Paperwhite"
+"price":120.00
+"quantity":20
+"imageUrl":"https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+"categoryNames":["Electronics"
+"Books"]}]
+
+
+2024-08-14 19:33:39.581 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 7:33:39 PM
+Address = https
+Path = /api/Product/78eff409-40d8-458d-8705-979b7d2df126
+IsSecured = True
+RequestBody = 
+
+2024-08-14 19:33:39.618 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 7:33:39 PM
+ResponseBody = 
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"Kindle Paperwhite"
+"price":120.00
+"quantity":20}
+
+
+2024-08-14 20:13:57.961 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 8:13:57 PM
+Address = https
+Path = /api/Product/78eff409-40d8-458d-8705-979b7d2df126
+IsSecured = True
+RequestBody = {
+  "name": "paperwhite",
+  "price": 110,
+  "imageUrl": "https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+}
+
+2024-08-14 20:13:59.003 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 8:13:59 PM
+ResponseBody = 
+
+
+
+2024-08-14 20:18:23.377 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 8:18:23 PM
+Address = https
+Path = /api/Product/78eff409-40d8-458d-8705-979b7d2df126
+IsSecured = True
+RequestBody = {
+  "name": "paperwhite",
+  "price": 110,
+  "imageUrl": "https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+}
+
+2024-08-14 20:18:24.463 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 8:18:24 PM
+ResponseBody = 
+No response body
+
+
+2024-08-14 20:18:53.223 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 8:18:53 PM
+Address = https
+Path = /api/Product/78eff409-40d8-458d-8705-979b7d2df126
+IsSecured = True
+RequestBody = {
+  "name": "kindle paperwhite",
+  "price": 150,
+  "imageUrl": "https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+}
+}
+
+2024-08-14 20:18:53.274 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 8:18:53 PM
+ResponseBody = 
+{"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1"
+"title":"One or more validation errors occurred."
+"status":400
+"errors":{"$":["'}' is invalid after a single JSON value. Expected end of data. Path: $ | LineNumber: 5 | BytePositionInLine: 0."]}
+"traceId":"00-23d5f9396ab26a757e8b82cf2b709241-a202f3a651abeda4-00"}
+
+
+2024-08-14 20:19:00.352 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 8:19:00 PM
+Address = https
+Path = /api/Product/78eff409-40d8-458d-8705-979b7d2df126
+IsSecured = True
+RequestBody = {
+  "name": "kindle paperwhite",
+  "price": 150,
+  "imageUrl": "https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+}
+
+
+2024-08-14 20:19:00.591 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 8:19:00 PM
+ResponseBody = 
+No response body
+
+
+2024-08-14 20:19:42.788 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 8:19:42 PM
+Address = https
+Path = /api/Product/78eff409-40d8-458d-8705-979b7d2df126
+IsSecured = True
+RequestBody = {
+  "name": "kindle paperwhite",
+  "price": 150,
+  "imageUrl": "https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+}
+
+
+2024-08-14 20:19:42.944 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 8:19:42 PM
+ResponseBody = 
+No response body
+
+
+2024-08-14 20:19:53.685 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 8:19:53 PM
+Address = https
+Path = /api/Product/78eff409-40d8-458d-8705-979b7d2df126
+IsSecured = True
+RequestBody = {
+  "name": "kindle paperwhite",
+  "price": 150,
+  "imageUrl": "https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+}
+
+
+2024-08-14 20:21:01.107 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 8:21:01 PM
+ResponseBody = 
+No response body
+
+
+2024-08-14 20:23:58.173 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 8:23:58 PM
+Address = https
+Path = /api/Product/78eff409-40d8-458d-8705-979b7d2df126
+IsSecured = True
+RequestBody = {
+  "name": "kindle paperwhite",
+  "price": 150,
+  "imageUrl": "https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+}
+
+
+2024-08-14 20:24:03.011 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 8:24:03 PM
+ResponseBody = 
+
+
+
+2024-08-14 21:19:28.341 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 9:19:28 PM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-14 21:19:29.054 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 9:19:29 PM
+ResponseBody = 
+[{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":20}]
+
+
+2024-08-14 21:19:46.716 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 9:19:46 PM
+Address = https
+Path = /api/Product/GetProductCategories/78eff409-40d8-458d-8705-979b7d2df126
+IsSecured = True
+RequestBody = 
+
+2024-08-14 21:19:46.994 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 9:19:46 PM
+ResponseBody = 
+[{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"productName":"kindle paperwhite"
+"categoryNames":["Electronics"
+"Books"]}]
+
+
+2024-08-14 21:36:48.756 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 9:36:48 PM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-14 21:36:49.500 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 9:36:49 PM
+ResponseBody = 
+[{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":20}]
+
+
+2024-08-14 21:36:59.884 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 9:36:59 PM
+Address = https
+Path = /api/Product/GetProductCategories/78eff409-40d8-458d-8705-979b7d2df126
+IsSecured = True
+RequestBody = 
+
+2024-08-14 21:37:00.081 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 9:37:00 PM
+ResponseBody = 
+[{"id":"a01ac5fe-7fcb-4e8f-befe-4e381db2524e"
+"productName":"kindle paperwhite"
+"categoryNames":["Electronics"]}
+{"id":"bb0ce6a7-fcad-4508-96b5-9f524edca6ce"
+"productName":"kindle paperwhite"
+"categoryNames":["Books"]}]
+
+
+2024-08-14 21:39:43.154 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 9:39:43 PM
+Address = https
+Path = /api/ProductQuantity
+IsSecured = True
+RequestBody = 
+
+2024-08-14 21:39:43.303 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 9:39:43 PM
+ResponseBody = 
+[{"id":"f48dca5c-009e-4372-8647-1ae6646a7ff0"
+"productId":"78eff409-40d8-458d-8705-979b7d2df126"
+"quantity":20
+"updatedAt":null
+"product":null}]
+
+
+2024-08-14 22:14:02.108 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 10:14:02 PM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-14 22:14:02.835 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 10:14:02 PM
+ResponseBody = 
+[{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":20}]
+
+
+2024-08-14 22:14:09.336 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 10:14:09 PM
+Address = https
+Path = /api/ProductQuantity/GetProductQuantities
+IsSecured = True
+RequestBody = 
+
+2024-08-14 22:18:47.960 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 10:18:47 PM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-14 22:18:48.654 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 10:18:48 PM
+ResponseBody = 
+[{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":20}]
+
+
+2024-08-14 22:18:55.225 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 10:18:55 PM
+Address = https
+Path = /api/ProductQuantity/GetProductQuantities
+IsSecured = True
+RequestBody = 
+
+2024-08-14 22:20:22.037 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 10:20:22 PM
+Address = https
+Path = /api/ProductQuantity/GetProductQuantities
+IsSecured = True
+RequestBody = 
+
+2024-08-14 22:20:22.688 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 10:20:22 PM
+ResponseBody = 
+[{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"quantity":20}]
+
+
+2024-08-14 22:22:17.392 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 10:22:17 PM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-14 22:22:18.028 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 10:22:18 PM
+ResponseBody = 
+[{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":20}]
+
+
+2024-08-14 22:22:22.925 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 10:22:22 PM
+Address = https
+Path = /api/ProductQuantity/GetProductQuantities
+IsSecured = True
+RequestBody = 
+
+2024-08-14 22:22:23.060 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 10:22:23 PM
+ResponseBody = 
+[{"id":"f48dca5c-009e-4372-8647-1ae6646a7ff0"
+"productId":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"quantity":20}]
+
+
+2024-08-14 22:22:47.972 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 10:22:47 PM
+Address = https
+Path = /api/ProductQuantity/f48dca5c-009e-4372-8647-1ae6646a7ff0
+IsSecured = True
+RequestBody = {
+  "productId": "78eff409-40d8-458d-8705-979b7d2df126",
+  "quantity": 10
+}
+
+2024-08-14 22:22:48.372 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 10:22:48 PM
+ResponseBody = 
+
+
+
+2024-08-14 22:22:52.733 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 10:22:52 PM
+Address = https
+Path = /api/ProductQuantity/GetProductQuantities
+IsSecured = True
+RequestBody = 
+
+2024-08-14 22:22:52.752 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 10:22:52 PM
+ResponseBody = 
+[{"id":"f48dca5c-009e-4372-8647-1ae6646a7ff0"
+"productId":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"quantity":10}]
+
+
+2024-08-14 22:22:57.141 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 10:22:57 PM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-14 22:22:57.155 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 10:22:57 PM
+ResponseBody = 
+[{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":10}]
+
+
+2024-08-14 22:23:50.184 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 10:23:50 PM
+Address = https
+Path = /api/Product/GetProductCategories/78eff409-40d8-458d-8705-979b7d2df126
+IsSecured = True
+RequestBody = 
+
+2024-08-14 22:23:50.257 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 10:23:50 PM
+ResponseBody = 
+[{"id":"a01ac5fe-7fcb-4e8f-befe-4e381db2524e"
+"productName":"kindle paperwhite"
+"categoryNames":["Electronics"]}
+{"id":"bb0ce6a7-fcad-4508-96b5-9f524edca6ce"
+"productName":"kindle paperwhite"
+"categoryNames":["Books"]}]
+
+

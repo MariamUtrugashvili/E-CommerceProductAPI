@@ -16,6 +16,11 @@ namespace E_CommerceProduct.Infrastructure.Common
 
         public IProductQuantityRepository ProductQuantityRepository => new ProductQuantityRepository(_dbContext);
 
+        public IProductCategoryRepository ProductCategoryRepository => new ProductCategoryRepository(_dbContext);
+
+        public IOrderProductRepository OrderProductRepository => new OrderProductRepository(_dbContext);
+
+
         public async Task<bool> SaveAsync()
         {
             return await _dbContext.SaveChangesAsync() > 0;

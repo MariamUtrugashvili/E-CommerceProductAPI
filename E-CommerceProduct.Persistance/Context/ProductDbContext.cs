@@ -11,7 +11,9 @@ namespace E_CommerceProduct.Persistance.Context
         public DbSet<ProductQuantity> ProductQuantities { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderProduct> OrderProducts { get; set; }
+        public DbSet<ProductCategory> ProductCategory { get; set; }
 
+       
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ProductDbContext).Assembly);

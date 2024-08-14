@@ -30,7 +30,6 @@ namespace E_CommerceProduct.Infrastructure.Common
         {
             return await _dbSet.Where(predicate).Select(selector).SingleOrDefaultAsync(token);
         }
-
         public async Task<List<T>> GetAllAsync(CancellationToken token)
         {
             return await _dbSet.ToListAsync(token);

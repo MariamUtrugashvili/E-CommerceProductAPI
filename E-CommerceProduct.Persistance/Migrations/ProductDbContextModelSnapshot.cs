@@ -22,21 +22,6 @@ namespace E_CommerceProduct.Persistance.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("CategoryProduct", b =>
-                {
-                    b.Property<Guid>("CategoriesId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("ProductsId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("CategoriesId", "ProductsId");
-
-                    b.HasIndex("ProductsId");
-
-                    b.ToTable("ProductCategories", (string)null);
-                });
-
             modelBuilder.Entity("E_CommerceProduct.Domain.Models.Category", b =>
                 {
                     b.Property<Guid>("Id")
@@ -57,22 +42,22 @@ namespace E_CommerceProduct.Persistance.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("f3331a8f-ed82-4cbb-824d-db54ef5a4b7b"),
+                            Id = new Guid("755f82ae-ef1e-4118-a10d-1f3305133b81"),
                             Name = "Electronics"
                         },
                         new
                         {
-                            Id = new Guid("65de9e5c-09a5-4b93-b86a-8ec5feda6e5c"),
+                            Id = new Guid("522d462f-3fed-4639-9690-3be13e747d2c"),
                             Name = "Clothing"
                         },
                         new
                         {
-                            Id = new Guid("0474db0d-28e4-4527-b913-d95aa5cea633"),
+                            Id = new Guid("9847f57a-82d4-4d56-8871-ab2ea7a3e08b"),
                             Name = "Books"
                         },
                         new
                         {
-                            Id = new Guid("bc409863-41af-4c64-ace2-8f61ddfbe17f"),
+                            Id = new Guid("a6655153-d515-4acd-a110-1dac88a38a84"),
                             Name = "FoodAndBeverages"
                         });
                 });
@@ -151,6 +136,28 @@ namespace E_CommerceProduct.Persistance.Migrations
                     b.ToTable("Products");
                 });
 
+            modelBuilder.Entity("E_CommerceProduct.Domain.Models.ProductCategory", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("CategoryId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid>("ProductId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.HasIndex("ProductId", "CategoryId")
+                        .IsUnique();
+
+                    b.ToTable("ProductCategory");
+                });
+
             modelBuilder.Entity("E_CommerceProduct.Domain.Models.ProductQuantity", b =>
                 {
                     b.Property<Guid>("Id")
@@ -174,21 +181,6 @@ namespace E_CommerceProduct.Persistance.Migrations
                     b.ToTable("ProductQuantities");
                 });
 
-            modelBuilder.Entity("CategoryProduct", b =>
-                {
-                    b.HasOne("E_CommerceProduct.Domain.Models.Category", null)
-                        .WithMany()
-                        .HasForeignKey("CategoriesId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("E_CommerceProduct.Domain.Models.Product", null)
-                        .WithMany()
-                        .HasForeignKey("ProductsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("E_CommerceProduct.Domain.Models.OrderProduct", b =>
                 {
                     b.HasOne("E_CommerceProduct.Domain.Models.Order", "Order")
@@ -208,6 +200,25 @@ namespace E_CommerceProduct.Persistance.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("E_CommerceProduct.Domain.Models.ProductCategory", b =>
+                {
+                    b.HasOne("E_CommerceProduct.Domain.Models.Category", "Category")
+                        .WithMany("ProductCategories")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("E_CommerceProduct.Domain.Models.Product", "Product")
+                        .WithMany("ProductCategories")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("E_CommerceProduct.Domain.Models.ProductQuantity", b =>
                 {
                     b.HasOne("E_CommerceProduct.Domain.Models.Product", "Product")
@@ -219,6 +230,11 @@ namespace E_CommerceProduct.Persistance.Migrations
                     b.Navigation("Product");
                 });
 
+            modelBuilder.Entity("E_CommerceProduct.Domain.Models.Category", b =>
+                {
+                    b.Navigation("ProductCategories");
+                });
+
             modelBuilder.Entity("E_CommerceProduct.Domain.Models.Order", b =>
                 {
                     b.Navigation("OrderProducts");
@@ -227,6 +243,8 @@ namespace E_CommerceProduct.Persistance.Migrations
             modelBuilder.Entity("E_CommerceProduct.Domain.Models.Product", b =>
                 {
                     b.Navigation("OrderProducts");
+
+                    b.Navigation("ProductCategories");
 
                     b.Navigation("ProductQuantity");
                 });

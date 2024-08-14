@@ -4,6 +4,7 @@ using E_CommerceProduct.Application.Services;
 using E_CommerceProduct.Domain.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading;
 
 namespace E_CommerceProductAPI.Controllers
 {
@@ -18,13 +19,19 @@ namespace E_CommerceProductAPI.Controllers
             _productService = productService;
         }
 
-        [HttpGet]
+        [HttpGet("GetProducts")]
         public async Task<ActionResult<IEnumerable<ProductResponseModel>>> GetProducts(CancellationToken cancellationToken)
         {
             return Ok(await _productService.GetAllProductsAsync(cancellationToken));
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("ProductDetails")]
+        public async Task<ActionResult<IEnumerable<ProductResponseModel>>> GetProductDetails(CancellationToken cancellationToken)
+        {
+            return Ok(await _productService.GetProductDetailsAsync(cancellationToken));
+        }
+
+        [HttpGet("GetProduct{id}")]
         public async Task<ActionResult<ProductResponseModel>> GetProduct(Guid id, CancellationToken cancellationToken)
         {
             var product = await _productService.GetProductByIdAsync(id, cancellationToken);
@@ -33,14 +40,20 @@ namespace E_CommerceProductAPI.Controllers
             return Ok(product);
         }
 
-        [HttpPost]
+        [HttpGet("GetProductCategories/{id}")]
+        public async Task<ActionResult<IEnumerable<ProductResponseModel>>> GetProductCategories(Guid id,CancellationToken cancellationToken)
+        {
+            return Ok(await _productService.GetProductCategoriesAsync(id,cancellationToken));
+        }
+
+        [HttpPost("CreateProduct")]
         public async Task<ActionResult> CreateProduct(CreateProductRequestModel product, CancellationToken cancellationToken)
         {
             await _productService.CreateProductAsync(product, cancellationToken);
             return Created();
         }
 
-        [HttpPut("{id}")]
+        [HttpPut("UpdateProduct/{id}")]
         public async Task<IActionResult> UpdateProduct(Guid id, UpdateProductRequestModel product, CancellationToken cancellationToken)
         {
 
@@ -48,7 +61,7 @@ namespace E_CommerceProductAPI.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id}")]
+        [HttpDelete("DeleteProduct{id}")]
         public async Task<IActionResult> DeleteProduct(Guid id, CancellationToken cancellationToken)
         {
             await _productService.DeleteProductAsync(id, cancellationToken);

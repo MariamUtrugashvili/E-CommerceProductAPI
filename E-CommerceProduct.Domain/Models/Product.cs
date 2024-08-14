@@ -10,7 +10,7 @@
         public DateTime? UpdatedAt { get; set; }
 
         // Navigation property
-        public List<Category> Categories { get; set; }
+        public List<ProductCategory> ProductCategories { get; set; }
         public List<OrderProduct> OrderProducts { get; set; }
         public ProductQuantity ProductQuantity { get; set; }
     }
