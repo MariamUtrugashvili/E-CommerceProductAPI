@@ -26,8 +26,7 @@ namespace E_CommerceProduct.Persistance.Configurations
             builder.Property(x => x.CreatedAt)
                    .IsRequired();
 
-            builder.Property(x => x.UpdatedAt)
-                   .IsRequired();
+            builder.Property(x => x.UpdatedAt);
 
             builder.HasMany(x => x.Categories)
                    .WithMany(x => x.Products)

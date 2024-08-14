@@ -1,4 +1,6 @@
 ﻿using E_CommerceProduct.Application.Common;
+using E_CommerceProduct.Application.Repositories;
+using E_CommerceProduct.Infrastructure.Repositories;
 using E_CommerceProduct.Persistance.Context;
 
 namespace E_CommerceProduct.Infrastructure.Common
@@ -7,6 +9,12 @@ namespace E_CommerceProduct.Infrastructure.Common
     {
         private readonly ProductDbContext _dbContext = dbContext;
         private bool _disposed;
+
+        public ICategoryRepository CategoryRepository => new CategoryRepository(_dbContext);
+
+        public IProductRepository ProductRepository => new ProductRepository(_dbContext);
+
+        public IProductQuantityRepository ProductQuantityRepository => new ProductQuantityRepository(_dbContext);
 
         public async Task<bool> SaveAsync()
         {

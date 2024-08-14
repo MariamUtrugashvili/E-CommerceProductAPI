@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using Serilog;
 using System.Reflection;
 using E_CommerceProductAPI.Infrastructure.Extensions.MiddleWare;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,7 +24,12 @@ builder.Host.UseSerilog();
 
 
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddJsonOptions(options =>
+    {
+        options.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+    });
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -60,6 +66,14 @@ app.UseAuthorization();
 
 app.MapControllers();
 app.UseRequestResponseMiddleware();
+
+
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<ProductDbContext>();
+    dbContext.Database.Migrate();
+}
+
 
 try
 {

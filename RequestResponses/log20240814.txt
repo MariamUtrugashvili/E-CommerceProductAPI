@@ -1,0 +1,54 @@
+2024-08-14 01:31:53.848 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 1:31:53 AM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = 
+
+2024-08-14 01:31:53.972 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 1:31:53 AM
+ResponseBody = 
+[]
+
+
+2024-08-14 13:52:23.128 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 1:52:23 PM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = 
+
+2024-08-14 13:52:24.025 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 1:52:24 PM
+ResponseBody = 
+[{"id":"f3d8e365-4f91-460a-8ea7-0574190ec25d"
+"name":"Books"}
+{"id":"ad697fd3-34fe-42df-b030-3447f9f3f97b"
+"name":"Clothing"}
+{"id":"a238da9e-efc5-4222-9d57-4e1fd4780e8d"
+"name":"Electronics"}
+{"id":"c5895e21-1b2d-4e4f-a527-03bb00b529f7"
+"name":"FoodAndBeverages"}
+{"id":"4107c3a1-9686-4e25-9828-ff4001c7c71b"
+"name":"Toys"}]
+
+
+2024-08-14 13:52:43.384 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/14/2024 1:52:43 PM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = 
+
+2024-08-14 13:52:43.664 +04:00 [INF] -RESPONSE:
+Time = 8/14/2024 1:52:43 PM
+ResponseBody = 
+[]
+
+

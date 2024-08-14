@@ -18,10 +18,13 @@ namespace E_CommerceProduct.Persistance.Configurations
             builder.Property(x => x.Quantity)
                    .IsRequired();
 
-            builder.Property(x => x.UpdatedAt)
-                   .IsRequired();
+            builder.Property(x => x.UpdatedAt);
   
             builder.HasIndex(x => x.ProductId);
+
+            builder.HasOne(x => x.Product)
+             .WithOne(x => x.ProductQuantity)
+             .HasForeignKey<ProductQuantity>(x => x.ProductId);
         }
     }
 }

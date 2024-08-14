@@ -1,5 +1,9 @@
 ﻿using E_CommerceProduct.Application.Common;
+using E_CommerceProduct.Application.Repositories;
+using E_CommerceProduct.Application.Services;
 using E_CommerceProduct.Infrastructure.Common;
+using E_CommerceProduct.Infrastructure.Repositories;
+using E_CommerceProduct.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace E_CommerceProduct.Infrastructure.Extensions
@@ -19,13 +23,19 @@ namespace E_CommerceProduct.Infrastructure.Extensions
             return services;
         }
 
-        public static IServiceCollection AddRepositories(this IServiceCollection repositories)
+        public static IServiceCollection AddRepositories(this IServiceCollection services)
         {
-            return repositories;
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<IProductQuantityRepository, ProductQuantityRepository>();
+            return services;
         }
 
         public static IServiceCollection AddServices(this IServiceCollection services)
         {
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<IProductService, ProductService>();
+            services.AddScoped<IProductQuantityService, ProductQuantityService>();
             return services;
         }
     }
