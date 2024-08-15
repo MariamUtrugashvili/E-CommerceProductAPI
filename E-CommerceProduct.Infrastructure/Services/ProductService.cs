@@ -1,14 +1,10 @@
 ﻿using E_CommerceProduct.Application.Common;
 using E_CommerceProduct.Application.Exceptions;
-using E_CommerceProduct.Application.ProductCategories.Request;
-using E_CommerceProduct.Application.ProductCategories.Response;
 using E_CommerceProduct.Application.Products.Request;
 using E_CommerceProduct.Application.Products.Response;
 using E_CommerceProduct.Application.Services;
-using E_CommerceProduct.Domain.Enums;
 using E_CommerceProduct.Domain.Models;
 using Mapster;
-using Microsoft.EntityFrameworkCore;
 
 namespace E_CommerceProduct.Infrastructure.Services
 {

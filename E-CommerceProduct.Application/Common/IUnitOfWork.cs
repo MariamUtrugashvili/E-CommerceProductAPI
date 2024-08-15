@@ -1,5 +1,4 @@
 ﻿using E_CommerceProduct.Application.Repositories;
-using E_CommerceProduct.Application.Services;
 
 namespace E_CommerceProduct.Application.Common
 {

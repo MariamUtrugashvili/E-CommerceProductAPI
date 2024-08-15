@@ -1,10 +1,5 @@
 ﻿using E_CommerceProduct.Application.ProductCategories.Request;
 using E_CommerceProduct.Application.ProductCategories.Response;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace E_CommerceProduct.Application.Services
 {

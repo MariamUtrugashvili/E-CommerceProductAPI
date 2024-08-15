@@ -2,10 +2,7 @@
 using E_CommerceProduct.Application.Products.Request;
 using E_CommerceProduct.Application.Products.Response;
 using E_CommerceProduct.Application.Services;
-using E_CommerceProduct.Domain.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System.Threading;
 
 namespace E_CommerceProductAPI.Controllers
 {

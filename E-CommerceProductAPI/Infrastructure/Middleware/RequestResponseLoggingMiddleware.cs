@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Primitives;
-using Serilog;
+﻿using Serilog;
 using System.Text;
 
 namespace E_CommerceProductAPI.Infrastructure.Middleware
