@@ -1,4 +1,5 @@
-﻿using E_CommerceProduct.Application.Products.Request;
+﻿using E_CommerceProduct.Application.ProductCategories.Request;
+using E_CommerceProduct.Application.Products.Request;
 using E_CommerceProduct.Application.Products.Response;
 using E_CommerceProduct.Application.Services;
 using E_CommerceProduct.Domain.Models;
@@ -13,10 +14,12 @@ namespace E_CommerceProductAPI.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
+        private readonly IProductCategoryService _productCategoryService;
 
-        public ProductController(IProductService productService)
+        public ProductController(IProductService productService, IProductCategoryService productCategoryService)
         {
             _productService = productService;
+            _productCategoryService = productCategoryService;
         }
 
         [HttpGet("GetProducts")]
@@ -34,16 +37,7 @@ namespace E_CommerceProductAPI.Controllers
         [HttpGet("GetProduct{id}")]
         public async Task<ActionResult<ProductResponseModel>> GetProduct(Guid id, CancellationToken cancellationToken)
         {
-            var product = await _productService.GetProductByIdAsync(id, cancellationToken);
-            if (product == null)
-                return NotFound();
-            return Ok(product);
-        }
-
-        [HttpGet("GetProductCategories/{id}")]
-        public async Task<ActionResult<IEnumerable<ProductResponseModel>>> GetProductCategories(Guid id,CancellationToken cancellationToken)
-        {
-            return Ok(await _productService.GetProductCategoriesAsync(id,cancellationToken));
+            return Ok(await _productService.GetProductByIdAsync(id, cancellationToken));
         }
 
         [HttpPost("CreateProduct")]
@@ -65,6 +59,26 @@ namespace E_CommerceProductAPI.Controllers
         public async Task<IActionResult> DeleteProduct(Guid id, CancellationToken cancellationToken)
         {
             await _productService.DeleteProductAsync(id, cancellationToken);
+            return NoContent();
+        }
+
+        [HttpGet("GetProductCategories/{id}")]
+        public async Task<ActionResult<IEnumerable<ProductResponseModel>>> GetProductCategories(Guid id, CancellationToken cancellationToken)
+        {
+            return Ok(await _productCategoryService.GetProductCategoriesAsync(id, cancellationToken));
+        }
+
+        [HttpPut("UpdateProductCategory{id:guid}")]
+        public async Task<IActionResult> UpdateProductCategory(UpdateProductCategoryRequest request, Guid id, CancellationToken cancellationToken)
+        {
+            await _productCategoryService.UpdateProductCategoryAsync(request, id, cancellationToken);
+            return NoContent();
+        }
+
+        [HttpDelete("DeleteProductCategory/{id:guid}")]
+        public async Task<IActionResult> DeleteProductCategory(Guid id, CancellationToken cancellationToken)
+        {
+            await _productCategoryService.DeleteProductCategoryAsync(id, cancellationToken);
             return NoContent();
         }
     }

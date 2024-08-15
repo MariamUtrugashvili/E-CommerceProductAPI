@@ -1,4 +1,5 @@
-﻿using E_CommerceProduct.Application.ProductCategories.Response;
+﻿using E_CommerceProduct.Application.ProductCategories.Request;
+using E_CommerceProduct.Application.ProductCategories.Response;
 using E_CommerceProduct.Application.Products.Request;
 using E_CommerceProduct.Application.Products.Response;
 using E_CommerceProduct.Domain.Models;
@@ -15,7 +16,6 @@ namespace E_CommerceProduct.Application.Services
         Task<IEnumerable<ProductResponseModel>> GetAllProductsAsync(CancellationToken cancellationToken);
         Task<IEnumerable<ProductDetailsResponseModel>> GetProductDetailsAsync(CancellationToken cancellationToken);
         Task<ProductResponseModel> GetProductByIdAsync(Guid id, CancellationToken cancellationToken);
-        Task<IEnumerable<ProductCategoriesResponseModel>> GetProductCategoriesAsync(Guid productId,CancellationToken cancellationToken); 
         Task CreateProductAsync(CreateProductRequestModel product, CancellationToken cancellationToken);
         Task UpdateProductAsync(UpdateProductRequestModel product, Guid id, CancellationToken cancellationToken);
         Task DeleteProductAsync(Guid id, CancellationToken cancellationToken);
