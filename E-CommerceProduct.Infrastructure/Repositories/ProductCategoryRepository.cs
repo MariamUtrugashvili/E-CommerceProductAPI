@@ -12,11 +12,6 @@ namespace E_CommerceProduct.Infrastructure.Repositories
     {
         public ProductCategoryRepository(ProductDbContext context) : base(context) { }
 
-        public Task DeleteProductAsync(Guid id, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task<IEnumerable<ProductCategoriesResponseModel>> GetProductCategoriesAsync(Guid productId, CancellationToken cancellationToken)
         {
             var productCategories = await _context.ProductCategory
@@ -33,11 +28,6 @@ namespace E_CommerceProduct.Infrastructure.Repositories
 
 
             return productCategories;
-        }
-
-        public Task UpdateProductAsync(ProductCategoriesRequestModel product, Guid id, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
         }
     }
 }

@@ -16,7 +16,6 @@ namespace E_CommerceProductAPI.Controllers
         }
 
         [HttpPost]
-        [Route("create")]
         public async Task<IActionResult> CreateOrder([FromBody] CreateOrderRequestModel request, CancellationToken cancellationToken)
         {
             try

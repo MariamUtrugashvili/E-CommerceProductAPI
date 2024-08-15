@@ -16,7 +16,7 @@ namespace E_CommerceProductAPI.Controllers
             _productQuantityService = productQuantityService;
         }
 
-        [HttpGet("GetProductQuantities")]
+        [HttpGet("ProductQuantities")]
         public async Task<ActionResult<IEnumerable<ProductQuantitiesResponseModel>>> GetProductQuantity(CancellationToken cancellationToken)
         {
             var productQuantity = await _productQuantityService.GetProductQuantity(cancellationToken);

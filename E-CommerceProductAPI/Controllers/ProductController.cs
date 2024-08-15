@@ -11,15 +11,13 @@ namespace E_CommerceProductAPI.Controllers
     public class ProductController : ControllerBase
     {
         private readonly IProductService _productService;
-        private readonly IProductCategoryService _productCategoryService;
 
-        public ProductController(IProductService productService, IProductCategoryService productCategoryService)
+        public ProductController(IProductService productService)
         {
             _productService = productService;
-            _productCategoryService = productCategoryService;
         }
 
-        [HttpGet("GetProducts")]
+        [HttpGet("Products")]
         public async Task<ActionResult<IEnumerable<ProductResponseModel>>> GetProducts(CancellationToken cancellationToken)
         {
             return Ok(await _productService.GetAllProductsAsync(cancellationToken));
@@ -31,20 +29,20 @@ namespace E_CommerceProductAPI.Controllers
             return Ok(await _productService.GetProductDetailsAsync(cancellationToken));
         }
 
-        [HttpGet("GetProduct{id}")]
+        [HttpGet("{id}")]
         public async Task<ActionResult<ProductResponseModel>> GetProduct(Guid id, CancellationToken cancellationToken)
         {
             return Ok(await _productService.GetProductByIdAsync(id, cancellationToken));
         }
 
-        [HttpPost("CreateProduct")]
+        [HttpPost]
         public async Task<ActionResult> CreateProduct(CreateProductRequestModel product, CancellationToken cancellationToken)
         {
             await _productService.CreateProductAsync(product, cancellationToken);
             return Created();
         }
 
-        [HttpPut("UpdateProduct/{id}")]
+        [HttpPut("{id}")]
         public async Task<IActionResult> UpdateProduct(Guid id, UpdateProductRequestModel product, CancellationToken cancellationToken)
         {
 
@@ -52,30 +50,10 @@ namespace E_CommerceProductAPI.Controllers
             return NoContent();
         }
 
-        [HttpDelete("DeleteProduct{id}")]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProduct(Guid id, CancellationToken cancellationToken)
         {
             await _productService.DeleteProductAsync(id, cancellationToken);
-            return NoContent();
-        }
-
-        [HttpGet("GetProductCategories/{id}")]
-        public async Task<ActionResult<IEnumerable<ProductResponseModel>>> GetProductCategories(Guid id, CancellationToken cancellationToken)
-        {
-            return Ok(await _productCategoryService.GetProductCategoriesAsync(id, cancellationToken));
-        }
-
-        [HttpPut("UpdateProductCategory{id:guid}")]
-        public async Task<IActionResult> UpdateProductCategory(UpdateProductCategoryRequest request, Guid id, CancellationToken cancellationToken)
-        {
-            await _productCategoryService.UpdateProductCategoryAsync(request, id, cancellationToken);
-            return NoContent();
-        }
-
-        [HttpDelete("DeleteProductCategory/{id:guid}")]
-        public async Task<IActionResult> DeleteProductCategory(Guid id, CancellationToken cancellationToken)
-        {
-            await _productCategoryService.DeleteProductCategoryAsync(id, cancellationToken);
             return NoContent();
         }
     }
