@@ -20,11 +20,13 @@ namespace E_CommerceProduct.Persistance.Configurations
 
             builder.HasOne(x => x.Order)
                    .WithMany(x => x.OrderProducts)
-                   .HasForeignKey(x => x.OrderId);
+                   .HasForeignKey(x => x.OrderId)
+                   .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasOne(x => x.Product)
                    .WithMany(x => x.OrderProducts)
-                   .HasForeignKey(x => x.ProductId);
+                   .HasForeignKey(x => x.ProductId)
+                   .OnDelete(DeleteBehavior.Cascade);
 
             builder.HasIndex(x => new { x.OrderId, x.ProductId }).IsUnique();
         }

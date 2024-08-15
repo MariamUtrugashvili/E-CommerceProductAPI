@@ -24,7 +24,8 @@ namespace E_CommerceProduct.Persistance.Configurations
 
             builder.HasOne(x => x.Product)
              .WithOne(x => x.ProductQuantity)
-             .HasForeignKey<ProductQuantity>(x => x.ProductId);
+             .HasForeignKey<ProductQuantity>(x => x.ProductId)
+             .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }
