@@ -13,13 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{56A2856E-BEAA-4E0A-8A95-71C08A57A4A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-CommerceProduct.Application", "E-CommerceProduct.Application\E-CommerceProduct.Application.csproj", "{63AF7FF7-B719-4D24-B457-F1AB3284236E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-CommerceProduct.Application", "E-CommerceProduct.Application\E-CommerceProduct.Application.csproj", "{63AF7FF7-B719-4D24-B457-F1AB3284236E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-CommerceProduct.Domain", "E-CommerceProduct.Domain\E-CommerceProduct.Domain.csproj", "{7F77EF86-A154-48F8-BF05-C92ACB496087}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-CommerceProduct.Domain", "E-CommerceProduct.Domain\E-CommerceProduct.Domain.csproj", "{7F77EF86-A154-48F8-BF05-C92ACB496087}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-CommerceProduct.Infrastructure", "E-CommerceProduct.Infrastructure\E-CommerceProduct.Infrastructure.csproj", "{52F476FD-3B77-41CF-8E1E-84FC53B62702}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-CommerceProduct.Infrastructure", "E-CommerceProduct.Infrastructure\E-CommerceProduct.Infrastructure.csproj", "{52F476FD-3B77-41CF-8E1E-84FC53B62702}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "E-CommerceProduct.Persistance", "E-CommerceProduct.Persistance\E-CommerceProduct.Persistance.csproj", "{07F5563F-4486-45FE-8851-9AB210D3301B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "E-CommerceProduct.Persistance", "E-CommerceProduct.Persistance\E-CommerceProduct.Persistance.csproj", "{07F5563F-4486-45FE-8851-9AB210D3301B}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{67790C71-78F2-450A-89D2-72F6361440BD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,6 +49,10 @@ Global
 		{07F5563F-4486-45FE-8851-9AB210D3301B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07F5563F-4486-45FE-8851-9AB210D3301B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07F5563F-4486-45FE-8851-9AB210D3301B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67790C71-78F2-450A-89D2-72F6361440BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67790C71-78F2-450A-89D2-72F6361440BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67790C71-78F2-450A-89D2-72F6361440BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67790C71-78F2-450A-89D2-72F6361440BD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
