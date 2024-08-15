@@ -1,0 +1,436 @@
+2024-08-15 09:30:21.826 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 9:30:21 AM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-15 09:30:22.861 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 9:30:22 AM
+ResponseBody = 
+[{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":10}]
+
+
+2024-08-15 09:34:55.039 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 9:34:55 AM
+Address = https
+Path = /api/Order/create
+IsSecured = True
+RequestBody = {
+  "orderItems": [
+    {
+      "productName": "kindle paperwhite",
+      "quantity": 2
+    }
+  ]
+}
+
+2024-08-15 09:34:55.382 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 9:34:55 AM
+ResponseBody = 
+{"message":"Product with name 'kindle paperwhite' is not available."}
+
+
+2024-08-15 09:35:41.399 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 9:35:41 AM
+Address = https
+Path = /api/Order/create
+IsSecured = True
+RequestBody = {
+  "orderItems": [
+    {
+      "productName": "kindle paperwhite",
+      "quantity": 2
+    }
+  ]
+}
+
+2024-08-15 09:41:00.139 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 9:41:00 AM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-15 09:41:00.908 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 9:41:00 AM
+ResponseBody = 
+[{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":10}]
+
+
+2024-08-15 09:41:15.729 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 9:41:15 AM
+Address = https
+Path = /api/Order/create
+IsSecured = True
+RequestBody = {
+  "orderItems": [
+    {
+      "productName": "kindle paperwhite",
+      "quantity": 2
+    }
+  ]
+}
+
+2024-08-15 09:41:16.091 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 9:41:16 AM
+ResponseBody = 
+{"message":"Product with name 'kindle paperwhite' is not available."}
+
+
+2024-08-15 09:42:12.787 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 9:42:12 AM
+Address = https
+Path = /api/Order/create
+IsSecured = True
+RequestBody = {
+  "orderItems": [
+    {
+      "productName": "kindle paperwhite",
+      "quantity": 2
+    }
+  ]
+}
+
+2024-08-15 09:51:25.008 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 9:51:24 AM
+Address = https
+Path = /api/Order/create
+IsSecured = True
+RequestBody = {
+  "orderItems": [
+    {
+      "productName": "kindle paperwhite",
+      "quantity": 2
+    }
+  ]
+}
+
+2024-08-15 09:51:26.052 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 9:51:26 AM
+ResponseBody = 
+{"message":"Order created successfully."}
+
+
+2024-08-15 11:27:24.632 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:27:24 AM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = 
+
+2024-08-15 11:27:25.141 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:27:25 AM
+ResponseBody = 
+[{"id":"9847f57a-82d4-4d56-8871-ab2ea7a3e08b"
+"name":"Books"}
+{"id":"522d462f-3fed-4639-9690-3be13e747d2c"
+"name":"Clothing"}
+{"id":"755f82ae-ef1e-4118-a10d-1f3305133b81"
+"name":"Electronics"}
+{"id":"a6655153-d515-4acd-a110-1dac88a38a84"
+"name":"FoodAndBeverages"}]
+
+
+2024-08-15 11:27:34.938 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:27:34 AM
+Address = https
+Path = /api/Product/CreateProduct
+IsSecured = True
+RequestBody = {
+  "name": "Milk",
+  "price":4,
+  "imageUrl": "https://health.maryland.gov/laboratories/PublishingImages/milk.jpg",
+  "quantity": 25,
+  "categoryNames": [
+    "FoodAndBeverages"
+  ]
+}
+
+2024-08-15 11:27:35.233 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:27:35 AM
+ResponseBody = 
+
+
+
+2024-08-15 11:27:42.858 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:27:42 AM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-15 11:27:42.962 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:27:42 AM
+ResponseBody = 
+[{"id":"feb203ac-158c-4bf1-b137-5f8f96e35c8d"
+"name":"Milk"
+"price":4.00
+"quantity":25}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":8}]
+
+
+2024-08-15 11:28:16.481 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:28:16 AM
+Address = https
+Path = /api/Order/create
+IsSecured = True
+RequestBody = {
+  "orderItems": [
+    {
+      "productName": "kindle paperwhite",
+      "quantity": 1
+    },
+    {
+      "productName": "Milk",
+      "quantity": 4
+    }
+  ]
+}
+
+2024-08-15 11:28:16.506 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:28:16 AM
+ResponseBody = 
+{"message":"Order created successfully."}
+
+
+2024-08-15 11:30:03.689 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:30:03 AM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-15 11:30:03.711 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:30:03 AM
+ResponseBody = 
+[{"id":"feb203ac-158c-4bf1-b137-5f8f96e35c8d"
+"name":"Milk"
+"price":4.00
+"quantity":21}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":7}]
+
+
+2024-08-15 11:31:35.199 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:31:35 AM
+Address = https
+Path = /api/Order/create
+IsSecured = True
+RequestBody = {
+  "orderItems": [
+    {
+      "productName": "kindle paperwhite",
+      "quantity": 10
+    },
+    {
+      "productName": "Milk",
+      "quantity": 4
+    }
+  ]
+}
+
+2024-08-15 11:31:35.302 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:31:35 AM
+ResponseBody = 
+{"message":"Insufficient quantity for product with name 'kindle paperwhite'. Available quantity: 7"}
+
+
+2024-08-15 11:32:00.538 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:32:00 AM
+Address = https
+Path = /api/Order/create
+IsSecured = True
+RequestBody = {
+  "orderItems": [
+    {
+      "productName": "kindle paperwhite",
+      "quantity": 10
+    },
+    {
+      "productName": "Milk",
+      "quantity": 90
+    }
+  ]
+}
+
+2024-08-15 11:32:00.619 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:32:00 AM
+ResponseBody = 
+{"message":"Insufficient quantity for product with name 'kindle paperwhite'. Available quantity: 7"}
+
+
+2024-08-15 11:32:14.411 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:32:14 AM
+Address = https
+Path = /api/Order/create
+IsSecured = True
+RequestBody = {
+  "orderItems": [
+    {
+      "productName": "kindle paperwhite",
+      "quantity": 1
+    },
+    {
+      "productName": "Milk",
+      "quantity": 90
+    }
+  ]
+}
+
+2024-08-15 11:32:14.478 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:32:14 AM
+ResponseBody = 
+{"message":"Insufficient quantity for product with name 'Milk'. Available quantity: 21"}
+
+
+2024-08-15 11:39:46.195 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:39:46 AM
+Address = https
+Path = /api/Order/create
+IsSecured = True
+RequestBody = {
+  "orderItems": [
+    {
+      "productName": "kindle paperwhite",
+      "quantity": 1
+    },
+    {
+      "productName": "Milk",
+      "quantity": 90
+    }
+  ]
+}
+
+2024-08-15 11:39:47.072 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:39:47 AM
+ResponseBody = 
+{"message":"Insufficient quantity for product with name 'Milk'. Available quantity: 21"}
+
+
+2024-08-15 11:39:55.931 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:39:55 AM
+Address = https
+Path = /api/Order/create
+IsSecured = True
+RequestBody = {
+  "orderItems": [
+    {
+      "productName": "kindle paperwhite",
+      "quantity": 55
+    },
+    {
+      "productName": "Milk",
+      "quantity": 90
+    }
+  ]
+}
+
+2024-08-15 11:39:56.143 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:39:56 AM
+ResponseBody = 
+{"message":"Insufficient quantity for product with name 'kindle paperwhite'. Available quantity: 7"}
+
+
+2024-08-15 11:40:23.510 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:40:23 AM
+Address = https
+Path = /api/Order/create
+IsSecured = True
+RequestBody = {
+  "orderItems": [
+    {
+      "productName": "kindle paperwhite",
+      "quantity": 1
+    },
+    {
+      "productName": "Milk",
+      "quantity": 1
+    }
+  ]
+}
+
+2024-08-15 11:40:23.934 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:40:23 AM
+ResponseBody = 
+{"message":"Order created successfully."}
+
+
+2024-08-15 12:09:30.445 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 12:09:30 PM
+Address = https
+Path = /api/Product/CreateProduct
+IsSecured = True
+RequestBody = {
+  "name": "",
+  "price": 0,
+  "imageUrl": "jsjsjd",
+  "quantity": 0,
+  "categoryNames": [
+    "Electronics"
+  ]
+}
+
+2024-08-15 12:09:30.681 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 12:09:30 PM
+ResponseBody = 
+{"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1"
+"title":"One or more validation errors occurred."
+"status":400
+"errors":{"Name":["Name must not be empty."
+"Name must be at least 2 characters long."]
+"Price":["Price must be greater than 0."]
+"ImageUrl":["ImageUrl must be a valid URL."]
+"Quantity":["Quantity must be greater than 0."]}
+"traceId":"00-90fbf2448731cb543f3f24b42fb9d55d-2ad0f558806cd58e-00"}
+
+

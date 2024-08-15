@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>E_CommerceProduct.Infrastructure</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\E-CommerceProduct.Application\E-CommerceProduct.Application.csproj" />
+    <ProjectReference Include="..\E-CommerceProduct.Persistance\E-CommerceProduct.Persistance.csproj" />
+  </ItemGroup>
+
+</Project>
