@@ -3,7 +3,7 @@ version: '3.4'
 services:
   e-commerceproduct.api:
     image: ${DOCKER_REGISTRY-}ecommerceproductapi
-    container_name: E-CommerceProduct.Api
+    container_name: E-CommerceProduct.API
     build:
       context: .
       dockerfile: E-CommerceProductAPI\Dockerfile
@@ -13,10 +13,13 @@ services:
 
   e-commerceproduct.database:
     image: mcr.microsoft.com/mssql/server:2022-latest
-    container_name: CommerceProduct.DB
+    container_name: E-CommerceProduct.DB
     environment:
       - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=Passw0rd123!@#
     volumes:
-      - ./.containers/E-CommerceProduct-db:/var/opt/mssql
+      - ./.containers/E-CommerceProduct-db:/var/opt/mssql/data
+    depends_on:
+      - e-commerceproduct.api
     ports:
       - "1433:1433"
