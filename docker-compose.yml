@@ -1,0 +1,25 @@
+version: '3.4'
+
+services:
+  e-commerceproduct.api:
+    image: ${DOCKER_REGISTRY-}ecommerceproductapi
+    container_name: YuTub.Api
+    build:
+      context: .
+      dockerfile: E-CommerceProductAPI\Dockerfile
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+
+  e-commerceproduct.database:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: mssql
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Passw0rd123!
+    volumes:
+      - ./.containers/E-CommerceProduct-db:/var/opt/mssql
+    networks:
+      - mssql-network
+    ports:
+      - "1433:1433"
