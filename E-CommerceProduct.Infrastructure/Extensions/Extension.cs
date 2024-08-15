@@ -30,6 +30,8 @@ namespace E_CommerceProduct.Infrastructure.Extensions
             services.AddScoped<IProductQuantityRepository, ProductQuantityRepository>();
             services.AddScoped<IProductCategoryRepository, ProductCategoryRepository>();
             services.AddScoped<IOrderProductRepository, OrderProductRepository>();
+            services.AddScoped<IOrderRepository, OrderRepository>();
+
 
             return services;
         }
@@ -39,6 +41,7 @@ namespace E_CommerceProduct.Infrastructure.Extensions
             services.AddScoped<ICategoryService, CategoryService>();
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IProductQuantityService, ProductQuantityService>();
+            services.AddScoped<IOrderService, OrderService>();
             return services;
         }
     }

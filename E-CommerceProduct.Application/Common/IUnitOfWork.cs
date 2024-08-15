@@ -10,6 +10,7 @@ namespace E_CommerceProduct.Application.Common
         IProductQuantityRepository ProductQuantityRepository { get; }
         IProductCategoryRepository ProductCategoryRepository { get; }
         IOrderProductRepository OrderProductRepository { get; }
+        IOrderRepository OrderRepository { get; }
 
         Task<bool> SaveAsync();
     }

@@ -19,6 +19,8 @@ namespace E_CommerceProduct.Infrastructure.Common
         public IProductCategoryRepository ProductCategoryRepository => new ProductCategoryRepository(_dbContext);
 
         public IOrderProductRepository OrderProductRepository => new OrderProductRepository(_dbContext);
+        public IOrderRepository OrderRepository => new OrderRepository(_dbContext);
+
 
 
         public async Task<bool> SaveAsync()

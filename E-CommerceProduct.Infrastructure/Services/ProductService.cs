@@ -1,5 +1,4 @@
-﻿using E_CommerceProduct.Application.Categories.Response;
-using E_CommerceProduct.Application.Common;
+﻿using E_CommerceProduct.Application.Common;
 using E_CommerceProduct.Application.Exceptions;
 using E_CommerceProduct.Application.ProductCategories.Response;
 using E_CommerceProduct.Application.Products.Request;
@@ -7,12 +6,6 @@ using E_CommerceProduct.Application.Products.Response;
 using E_CommerceProduct.Application.Services;
 using E_CommerceProduct.Domain.Models;
 using Mapster;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace E_CommerceProduct.Infrastructure.Services
 {
@@ -118,7 +111,7 @@ namespace E_CommerceProduct.Infrastructure.Services
         public async Task DeleteProductAsync(Guid id, CancellationToken cancellationToken)
         {
             var product = await _unitOfWork.ProductRepository.GetAsync(cancellationToken, id);
-            if (product == null) throw new Exception("Product not found");
+            if (product == null) throw new ItemNotFoundException("Product not found");
 
             _unitOfWork.ProductRepository.Delete(product, cancellationToken);
             await _unitOfWork.SaveAsync();

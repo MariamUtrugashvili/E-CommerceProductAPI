@@ -31,7 +31,6 @@
 
   <ItemGroup>
     <Folder Include="Infrastructure\Extensions\Validation\" />
-    <Folder Include="Infrastructure\Validators\" />
   </ItemGroup>
 
   <ItemGroup>
