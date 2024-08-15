@@ -1,11 +1,6 @@
 ﻿using E_CommerceProduct.Domain.Models;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace E_CommerceProduct.Persistance.Configurations
 {
@@ -24,7 +19,8 @@ namespace E_CommerceProduct.Persistance.Configurations
 
             builder.HasOne(x => x.Product)
              .WithOne(x => x.ProductQuantity)
-             .HasForeignKey<ProductQuantity>(x => x.ProductId);
+             .HasForeignKey<ProductQuantity>(x => x.ProductId)
+             .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

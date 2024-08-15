@@ -1,6 +1,5 @@
 ﻿using E_CommerceProduct.Application.Common;
 using E_CommerceProduct.Application.Exceptions;
-using E_CommerceProduct.Application.ProductCategories.Response;
 using E_CommerceProduct.Application.Products.Request;
 using E_CommerceProduct.Application.Products.Response;
 using E_CommerceProduct.Application.Services;
@@ -28,6 +27,8 @@ namespace E_CommerceProduct.Infrastructure.Services
         public async Task<ProductResponseModel> GetProductByIdAsync(Guid id, CancellationToken cancellationToken)
         {
             var result = await _unitOfWork.ProductRepository.GetProductAsync(cancellationToken, id);
+            if (result == null)
+                throw new ItemNotFoundException("Product with this Id wasn't found");
             return result.Adapt<ProductResponseModel>();
         }
 
@@ -121,12 +122,6 @@ namespace E_CommerceProduct.Infrastructure.Services
         {
             var result = await _unitOfWork.ProductRepository.GetAllProductDetailsAsync(cancellationToken);
 
-            return result;
-        }
-
-        public async Task<IEnumerable<ProductCategoriesResponseModel>> GetProductCategoriesAsync(Guid productId, CancellationToken cancellationToken)
-        {
-            var result = await _unitOfWork.ProductCategoryRepository.GetProductCategoriesAsync(productId,cancellationToken);
             return result;
         }
     }

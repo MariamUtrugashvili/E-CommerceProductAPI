@@ -434,3 +434,840 @@ ResponseBody =
 "traceId":"00-90fbf2448731cb543f3f24b42fb9d55d-2ad0f558806cd58e-00"}
 
 
+2024-08-15 22:31:21.573 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 10:31:21 PM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-15 22:31:21.746 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 10:31:21 PM
+ResponseBody = 
+No response body
+
+
+2024-08-15 22:32:31.096 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 10:32:31 PM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-15 22:32:32.345 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 10:32:32 PM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13}
+{"id":"feb203ac-158c-4bf1-b137-5f8f96e35c8d"
+"name":"Milk"
+"price":4.00
+"quantity":16}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6}]
+
+
+2024-08-15 22:32:42.687 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 10:32:42 PM
+Address = https
+Path = /api/Product/GetProductCategories/a79877fc-a24b-4883-92dc-3946b4cb0aa6
+IsSecured = True
+RequestBody = 
+
+2024-08-15 22:32:43.059 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 10:32:43 PM
+ResponseBody = 
+[{"id":"59a79ae6-d072-4130-b6ae-0c29097765d5"
+"productName":"Smartwatch"
+"categoryNames":["Electronics"]}
+{"id":"84bf945b-13e1-4b83-92f8-005695e6940a"
+"productName":"Smartwatch"
+"categoryNames":["Clothing"]}
+{"id":"2519da55-05b9-482e-a20d-c23f6b9770f4"
+"productName":"Smartwatch"
+"categoryNames":["Books"]}]
+
+
+2024-08-15 22:32:51.397 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 10:32:51 PM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = 
+
+2024-08-15 22:32:51.589 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 10:32:51 PM
+ResponseBody = 
+[{"id":"9847f57a-82d4-4d56-8871-ab2ea7a3e08b"
+"name":"Books"}
+{"id":"522d462f-3fed-4639-9690-3be13e747d2c"
+"name":"Clothing"}
+{"id":"755f82ae-ef1e-4118-a10d-1f3305133b81"
+"name":"Electronics"}
+{"id":"a6655153-d515-4acd-a110-1dac88a38a84"
+"name":"FoodAndBeverages"}]
+
+
+2024-08-15 22:33:34.276 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 10:33:34 PM
+Address = https
+Path = /api/Product/UpdateProductCategory84bf945b-13e1-4b83-92f8-005695e6949a
+IsSecured = True
+RequestBody = {
+  "newCategory": "FoodAndBeverages"
+}
+
+2024-08-15 22:33:34.749 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 10:33:34 PM
+ResponseBody = 
+No response body
+
+
+2024-08-15 22:34:12.013 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 10:34:12 PM
+Address = https
+Path = /api/Product/UpdateProductCategory84bf945b-13e1-4b83-92f8-005695e6940a
+IsSecured = True
+RequestBody = {
+  "newCategory": "Sports"
+}
+
+2024-08-15 22:34:12.451 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 10:34:12 PM
+ResponseBody = 
+No response body
+
+
+2024-08-15 22:34:30.950 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 10:34:30 PM
+Address = https
+Path = /api/Product/UpdateProductCategory84bf945b-13e1-4b83-92f8-005695e6940a
+IsSecured = True
+RequestBody = {
+  "newCategory": "Books"
+}
+
+2024-08-15 22:34:31.233 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 10:34:31 PM
+ResponseBody = 
+No response body
+
+
+2024-08-15 22:34:38.421 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 10:34:38 PM
+Address = https
+Path = /api/Product/UpdateProductCategory84bf945b-13e1-4b83-92f8-005695e6940a
+IsSecured = True
+RequestBody = {
+  "newCategory": "FoodAndBeverages"
+}
+
+2024-08-15 22:34:38.733 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 10:34:38 PM
+ResponseBody = 
+
+
+
+2024-08-15 22:34:50.509 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 10:34:50 PM
+Address = https
+Path = /api/Product/GetProductCategories/a79877fc-a24b-4883-92dc-3946b4cb0aa6
+IsSecured = True
+RequestBody = 
+
+2024-08-15 22:34:50.521 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 10:34:50 PM
+ResponseBody = 
+[{"id":"84bf945b-13e1-4b83-92f8-005695e6940a"
+"productName":"Smartwatch"
+"categoryNames":["FoodAndBeverages"]}
+{"id":"59a79ae6-d072-4130-b6ae-0c29097765d5"
+"productName":"Smartwatch"
+"categoryNames":["Electronics"]}
+{"id":"2519da55-05b9-482e-a20d-c23f6b9770f4"
+"productName":"Smartwatch"
+"categoryNames":["Books"]}]
+
+
+2024-08-15 22:35:02.510 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 10:35:02 PM
+Address = https
+Path = /api/Product/ProductDetails
+IsSecured = True
+RequestBody = 
+
+2024-08-15 22:35:02.684 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 10:35:02 PM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13
+"imageUrl":"https://th.bing.com/th/id/R.9584d55590a39c6f212d3df13891ccd5?rik=F9ZGN6wiD4KDGg&pid=ImgRaw&r=0"
+"categoryNames":["FoodAndBeverages"
+"Electronics"
+"Books"]}
+{"id":"feb203ac-158c-4bf1-b137-5f8f96e35c8d"
+"name":"Milk"
+"price":4.00
+"quantity":16
+"imageUrl":"https://health.maryland.gov/laboratories/PublishingImages/milk.jpg"
+"categoryNames":["FoodAndBeverages"]}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6
+"imageUrl":"https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+"categoryNames":["Electronics"
+"Books"]}]
+
+
+2024-08-15 22:36:10.638 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 10:36:10 PM
+Address = https
+Path = /api/Product/DeleteProductCategory/84bf945b-13e1-4b83-92f8-005695e6940a
+IsSecured = True
+RequestBody = 
+
+2024-08-15 22:36:12.020 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 10:36:12 PM
+ResponseBody = 
+
+
+
+2024-08-15 22:36:22.418 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 10:36:22 PM
+Address = https
+Path = /api/Product/ProductDetails
+IsSecured = True
+RequestBody = 
+
+2024-08-15 22:36:22.913 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 10:36:22 PM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13
+"imageUrl":"https://th.bing.com/th/id/R.9584d55590a39c6f212d3df13891ccd5?rik=F9ZGN6wiD4KDGg&pid=ImgRaw&r=0"
+"categoryNames":["Electronics"
+"Books"]}
+{"id":"feb203ac-158c-4bf1-b137-5f8f96e35c8d"
+"name":"Milk"
+"price":4.00
+"quantity":16
+"imageUrl":"https://health.maryland.gov/laboratories/PublishingImages/milk.jpg"
+"categoryNames":["FoodAndBeverages"]}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6
+"imageUrl":"https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+"categoryNames":["Electronics"
+"Books"]}]
+
+
+2024-08-15 23:25:35.583 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:25:35 PM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:25:36.178 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:25:36 PM
+ResponseBody = 
+[{"id":"0287bb1c-24ec-4293-9d78-e31e95f9176c"
+"name":"Books"}
+{"id":"ba66f07f-480e-44c3-92ac-352e383b0f41"
+"name":"Clothing"}
+{"id":"af75b9b9-0dd5-4ccd-b7fb-13f0849a58ca"
+"name":"Electronics"}
+{"id":"af23dca3-6851-4331-a1bd-65dd88f6eb34"
+"name":"FoodAndBeverages"}]
+
+
+2024-08-15 23:25:43.588 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:25:43 PM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = {
+  "name": "Toys"
+}
+
+2024-08-15 23:25:44.201 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:25:44 PM
+ResponseBody = 
+
+
+
+2024-08-15 23:25:56.261 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:25:56 PM
+Address = https
+Path = /api/Product/CreateProduct
+IsSecured = True
+RequestBody = {
+  "name": "USB Flash Drive",
+  "price": 20,
+  "imageUrl": "https://th.bing.com/th/id/R.3310e21eed921fe5d03744ccb6ffef64?rik=o30X3PcLwLVbpA&pid=ImgRaw&r=0",
+  "quantity": 5,
+  "categoryNames": [
+    "Electronics","Toys",
+  ]
+}
+
+2024-08-15 23:25:56.330 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:25:56 PM
+ResponseBody = 
+{"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1"
+"title":"One or more validation errors occurred."
+"status":400
+"errors":{"$.categoryNames[2]":["The JSON array contains a trailing comma at the end which is not supported in this mode. Change the reader options. Path: $.categoryNames[2] | LineNumber: 7 | BytePositionInLine: 2."]}
+"traceId":"00-08a50ebcf14fcd53a986f30055986e4f-47473bbd107633d6-00"}
+
+
+2024-08-15 23:26:06.779 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:26:06 PM
+Address = https
+Path = /api/Product/CreateProduct
+IsSecured = True
+RequestBody = {
+  "name": "USB Flash Drive",
+  "price": 20,
+  "imageUrl": "https://th.bing.com/th/id/R.3310e21eed921fe5d03744ccb6ffef64?rik=o30X3PcLwLVbpA&pid=ImgRaw&r=0",
+  "quantity": 5,
+  "categoryNames": [
+    "Electronics","Toys"
+  ]
+}
+
+2024-08-15 23:26:07.159 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:26:07 PM
+ResponseBody = 
+
+
+
+2024-08-15 23:26:50.731 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:26:50 PM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:26:50.857 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:26:50 PM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13}
+{"id":"feb203ac-158c-4bf1-b137-5f8f96e35c8d"
+"name":"Milk"
+"price":4.00
+"quantity":16}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":5}]
+
+
+2024-08-15 23:27:26.194 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:27:26 PM
+Address = https
+Path = /api/Order/create
+IsSecured = True
+RequestBody = {
+  "orderItems": [
+    {
+      "productName": "USB Flash Drive",
+      "quantity": 1
+    },
+    {
+      "productName": "Milk",
+      "quantity": 1
+    }
+  ]
+}
+
+2024-08-15 23:27:26.360 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:27:26 PM
+ResponseBody = 
+{"message":"Order created successfully."}
+
+
+2024-08-15 23:27:36.257 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:27:36 PM
+Address = https
+Path = /api/ProductQuantity/GetProductQuantities
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:27:36.288 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:27:36 PM
+ResponseBody = 
+[{"id":"f48dca5c-009e-4372-8647-1ae6646a7ff0"
+"productId":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"quantity":6}
+{"id":"1b0a412b-a03f-4dde-bf5f-7ce1d28efa17"
+"productId":"feb203ac-158c-4bf1-b137-5f8f96e35c8d"
+"name":"Milk"
+"quantity":15}
+{"id":"26049960-fcfa-4b8e-ba21-5dec077ad290"
+"productId":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"quantity":13}
+{"id":"3a14cece-82bb-4d71-96f7-bc40ea06eab3"
+"productId":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"quantity":4}]
+
+
+2024-08-15 23:28:02.908 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:28:02 PM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:28:02.924 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:28:02 PM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13}
+{"id":"feb203ac-158c-4bf1-b137-5f8f96e35c8d"
+"name":"Milk"
+"price":4.00
+"quantity":15}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4}]
+
+
+2024-08-15 23:28:05.235 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:28:05 PM
+Address = https
+Path = /api/Product/ProductDetails
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:28:05.346 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:28:05 PM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13
+"imageUrl":"https://th.bing.com/th/id/R.9584d55590a39c6f212d3df13891ccd5?rik=F9ZGN6wiD4KDGg&pid=ImgRaw&r=0"
+"categoryNames":[]}
+{"id":"feb203ac-158c-4bf1-b137-5f8f96e35c8d"
+"name":"Milk"
+"price":4.00
+"quantity":15
+"imageUrl":"https://health.maryland.gov/laboratories/PublishingImages/milk.jpg"
+"categoryNames":[]}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6
+"imageUrl":"https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+"categoryNames":[]}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4
+"imageUrl":"https://th.bing.com/th/id/R.3310e21eed921fe5d03744ccb6ffef64?rik=o30X3PcLwLVbpA&pid=ImgRaw&r=0"
+"categoryNames":["Electronics"
+"Toys"]}]
+
+
+2024-08-15 23:28:30.150 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:28:30 PM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:28:30.172 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:28:30 PM
+ResponseBody = 
+[{"id":"0287bb1c-24ec-4293-9d78-e31e95f9176c"
+"name":"Books"}
+{"id":"ba66f07f-480e-44c3-92ac-352e383b0f41"
+"name":"Clothing"}
+{"id":"af75b9b9-0dd5-4ccd-b7fb-13f0849a58ca"
+"name":"Electronics"}
+{"id":"af23dca3-6851-4331-a1bd-65dd88f6eb34"
+"name":"FoodAndBeverages"}
+{"id":"78b09766-b847-41e1-9ce7-de1227f3828a"
+"name":"Toys"}]
+
+
+2024-08-15 23:32:28.977 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:32:28 PM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:32:28.989 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:32:28 PM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13}
+{"id":"feb203ac-158c-4bf1-b137-5f8f96e35c8d"
+"name":"Milk"
+"price":4.00
+"quantity":15}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4}]
+
+
+2024-08-15 23:32:40.821 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:32:40 PM
+Address = https
+Path = /api/Product/GetProductCategories/f8816abe-284f-49fe-8a52-d01d438ce2c5
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:32:40.888 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:32:40 PM
+ResponseBody = 
+[{"id":"6cbafe63-52c2-40a5-9517-330df27aaf14"
+"productName":"USB Flash Drive"
+"categoryNames":["Electronics"]}
+{"id":"b6008ec1-002f-4d2e-a0c5-cd3691f4447b"
+"productName":"USB Flash Drive"
+"categoryNames":["Toys"]}]
+
+
+2024-08-15 23:32:53.228 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:32:53 PM
+Address = https
+Path = /api/Product/DeleteProductCategory/b6008ec1-002f-4d2e-a0c5-cd3691f4447b
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:32:53.293 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:32:53 PM
+ResponseBody = 
+
+
+
+2024-08-15 23:32:57.858 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:32:57 PM
+Address = https
+Path = /api/Product/GetProductCategories/f8816abe-284f-49fe-8a52-d01d438ce2c5
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:32:57.865 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:32:57 PM
+ResponseBody = 
+[{"id":"6cbafe63-52c2-40a5-9517-330df27aaf14"
+"productName":"USB Flash Drive"
+"categoryNames":["Electronics"]}]
+
+
+2024-08-15 23:33:02.078 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:33:02 PM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:33:02.095 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:33:02 PM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13}
+{"id":"feb203ac-158c-4bf1-b137-5f8f96e35c8d"
+"name":"Milk"
+"price":4.00
+"quantity":15}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4}]
+
+
+2024-08-15 23:33:05.609 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:33:05 PM
+Address = https
+Path = /api/Product/ProductDetails
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:33:05.629 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:33:05 PM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13
+"imageUrl":"https://th.bing.com/th/id/R.9584d55590a39c6f212d3df13891ccd5?rik=F9ZGN6wiD4KDGg&pid=ImgRaw&r=0"
+"categoryNames":[]}
+{"id":"feb203ac-158c-4bf1-b137-5f8f96e35c8d"
+"name":"Milk"
+"price":4.00
+"quantity":15
+"imageUrl":"https://health.maryland.gov/laboratories/PublishingImages/milk.jpg"
+"categoryNames":[]}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6
+"imageUrl":"https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+"categoryNames":[]}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4
+"imageUrl":"https://th.bing.com/th/id/R.3310e21eed921fe5d03744ccb6ffef64?rik=o30X3PcLwLVbpA&pid=ImgRaw&r=0"
+"categoryNames":["Electronics"]}]
+
+
+2024-08-15 23:34:13.539 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:34:13 PM
+Address = https
+Path = /api/Product/DeleteProductfeb203ac-158c-4bf1-b137-5f8f96e35c8d
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:34:13.575 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:34:13 PM
+ResponseBody = 
+
+
+
+2024-08-15 23:36:45.836 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:36:45 PM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:36:45.846 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:36:45 PM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4}]
+
+
+2024-08-15 23:36:50.808 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:36:50 PM
+Address = https
+Path = /api/Product/ProductDetails
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:36:50.832 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:36:50 PM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13
+"imageUrl":"https://th.bing.com/th/id/R.9584d55590a39c6f212d3df13891ccd5?rik=F9ZGN6wiD4KDGg&pid=ImgRaw&r=0"
+"categoryNames":[]}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6
+"imageUrl":"https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+"categoryNames":["Books"]}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4
+"imageUrl":"https://th.bing.com/th/id/R.3310e21eed921fe5d03744ccb6ffef64?rik=o30X3PcLwLVbpA&pid=ImgRaw&r=0"
+"categoryNames":["Electronics"]}]
+
+
+2024-08-15 23:39:35.241 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:39:35 PM
+Address = https
+Path = /api/Product/ProductDetails
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:39:35.286 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:39:35 PM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13
+"imageUrl":"https://th.bing.com/th/id/R.9584d55590a39c6f212d3df13891ccd5?rik=F9ZGN6wiD4KDGg&pid=ImgRaw&r=0"
+"categoryNames":["Clothing"
+"Electronics"]}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6
+"imageUrl":"https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+"categoryNames":["Books"]}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4
+"imageUrl":"https://th.bing.com/th/id/R.3310e21eed921fe5d03744ccb6ffef64?rik=o30X3PcLwLVbpA&pid=ImgRaw&r=0"
+"categoryNames":["Electronics"]}]
+
+
+2024-08-15 23:39:53.447 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:39:53 PM
+Address = https
+Path = /api/ProductQuantity/GetProductQuantities
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:39:53.456 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:39:53 PM
+ResponseBody = 
+[{"id":"f48dca5c-009e-4372-8647-1ae6646a7ff0"
+"productId":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"quantity":6}
+{"id":"26049960-fcfa-4b8e-ba21-5dec077ad290"
+"productId":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"quantity":13}
+{"id":"3a14cece-82bb-4d71-96f7-bc40ea06eab3"
+"productId":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"quantity":4}]
+
+
+2024-08-15 23:40:04.152 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/15/2024 11:40:04 PM
+Address = https
+Path = /api/Product/GetProducts
+IsSecured = True
+RequestBody = 
+
+2024-08-15 23:40:04.160 +04:00 [INF] -RESPONSE:
+Time = 8/15/2024 11:40:04 PM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4}]
+
+

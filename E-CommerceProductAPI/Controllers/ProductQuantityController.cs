@@ -1,8 +1,6 @@
 ﻿using E_CommerceProduct.Application.ProductQuantities.Request;
 using E_CommerceProduct.Application.ProductQuantities.Response;
 using E_CommerceProduct.Application.Services;
-using E_CommerceProduct.Domain.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace E_CommerceProductAPI.Controllers
@@ -18,7 +16,7 @@ namespace E_CommerceProductAPI.Controllers
             _productQuantityService = productQuantityService;
         }
 
-        [HttpGet("GetProductQuantities")]
+        [HttpGet("ProductQuantities")]
         public async Task<ActionResult<IEnumerable<ProductQuantitiesResponseModel>>> GetProductQuantity(CancellationToken cancellationToken)
         {
             var productQuantity = await _productQuantityService.GetProductQuantity(cancellationToken);

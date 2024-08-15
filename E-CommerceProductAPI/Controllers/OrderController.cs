@@ -1,6 +1,5 @@
 ﻿using E_CommerceProduct.Application.Orders.Request;
 using E_CommerceProduct.Application.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace E_CommerceProductAPI.Controllers
@@ -17,7 +16,6 @@ namespace E_CommerceProductAPI.Controllers
         }
 
         [HttpPost]
-        [Route("create")]
         public async Task<IActionResult> CreateOrder([FromBody] CreateOrderRequestModel request, CancellationToken cancellationToken)
         {
             try

@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Primitives;
-using Serilog;
+﻿using Serilog;
 using System.Text;
 
 namespace E_CommerceProductAPI.Infrastructure.Middleware
@@ -8,7 +7,7 @@ namespace E_CommerceProductAPI.Infrastructure.Middleware
     {
         private readonly RequestDelegate _next;
         private readonly Serilog.ILogger _logger;
-        public RequestResponseLoggingMiddleware(RequestDelegate next, IHttpContextAccessor httpAccessor)
+        public RequestResponseLoggingMiddleware(RequestDelegate next)
         {
             _next = next;
             _logger = new LoggerConfiguration()

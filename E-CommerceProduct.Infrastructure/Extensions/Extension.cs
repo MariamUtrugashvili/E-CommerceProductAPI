@@ -42,6 +42,8 @@ namespace E_CommerceProduct.Infrastructure.Extensions
             services.AddScoped<IProductService, ProductService>();
             services.AddScoped<IProductQuantityService, ProductQuantityService>();
             services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped<IProductCategoryService, ProductCategoryService>(); 
+
             return services;
         }
     }

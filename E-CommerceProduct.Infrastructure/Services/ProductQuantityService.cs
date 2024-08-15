@@ -2,16 +2,8 @@
 using E_CommerceProduct.Application.Exceptions;
 using E_CommerceProduct.Application.ProductQuantities.Request;
 using E_CommerceProduct.Application.ProductQuantities.Response;
-using E_CommerceProduct.Application.Products.Response;
 using E_CommerceProduct.Application.Services;
-using E_CommerceProduct.Domain.Models;
 using Mapster;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace E_CommerceProduct.Infrastructure.Services
 {
