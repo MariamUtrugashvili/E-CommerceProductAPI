@@ -3,7 +3,6 @@ using E_CommerceProduct.Application.Exceptions;
 using E_CommerceProduct.Application.ProductCategories.Request;
 using E_CommerceProduct.Application.ProductCategories.Response;
 using E_CommerceProduct.Application.Services;
-using E_CommerceProduct.Domain.Enums;
 using E_CommerceProduct.Domain.Models;
 
 namespace E_CommerceProduct.Infrastructure.Services
@@ -57,7 +56,7 @@ namespace E_CommerceProduct.Infrastructure.Services
             return productCategories.SelectMany(pc => pc.CategoryNames).ToList();
         }
 
-        private async Task<Category> GetCategoryByNameAsync(CategoryName categoryName, CancellationToken cancellationToken)
+        private async Task<Category> GetCategoryByNameAsync(string categoryName, CancellationToken cancellationToken)
         {
             var allCategories = await _unitOfWork.CategoryRepository.GetAllAsync(cancellationToken);
 

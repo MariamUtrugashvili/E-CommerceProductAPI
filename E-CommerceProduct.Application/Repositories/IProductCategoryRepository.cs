@@ -1,5 +1,4 @@
 ﻿using E_CommerceProduct.Application.Common;
-using E_CommerceProduct.Application.ProductCategories.Request;
 using E_CommerceProduct.Application.ProductCategories.Response;
 using E_CommerceProduct.Domain.Models;
 

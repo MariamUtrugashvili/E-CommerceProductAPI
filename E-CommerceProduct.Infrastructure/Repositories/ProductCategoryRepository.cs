@@ -1,5 +1,4 @@
-﻿using E_CommerceProduct.Application.ProductCategories.Request;
-using E_CommerceProduct.Application.ProductCategories.Response;
+﻿using E_CommerceProduct.Application.ProductCategories.Response;
 using E_CommerceProduct.Application.Repositories;
 using E_CommerceProduct.Domain.Models;
 using E_CommerceProduct.Infrastructure.Common;
@@ -21,7 +20,7 @@ namespace E_CommerceProduct.Infrastructure.Repositories
                     {
                         Id = pc.Id, 
                         ProductName = pc.Product.Name, 
-                        CategoryNames = new List<string> { pc.Category.Name.ToString() }
+                        CategoryNames = new List<string> { pc.Category.Name }
                     })
                     .ToListAsync(cancellationToken);
 

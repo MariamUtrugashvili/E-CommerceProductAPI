@@ -32,66 +32,6 @@ namespace E_CommerceProduct.Infrastructure.Services
             return result.Adapt<ProductResponseModel>();
         }
 
-        public async Task CreateProductAsync(CreateProductRequestModel product, CancellationToken cancellationToken)
-        {
-            if (await _unitOfWork.ProductRepository.AnyAsync(x => x.Name == product.Name, cancellationToken))
-                throw new AlreadyExistsException("Product with this Name already exists");
-
-            // Initialize a list to store category IDs
-            var categoryIds = new List<Guid>();
-
-            // Loop through the provided category names
-            foreach (var categoryName in product.CategoryNames)
-            {
-                // Retrieve the category ID for each name
-                var categoryId = await _unitOfWork.CategoryRepository
-                    .GetPropertyAsync(
-                        x => x.Name == categoryName, // Predicate to match the category name
-                        x => x.Id, // Selector to return the category ID
-                        cancellationToken
-                    );
-
-                if (categoryId == Guid.Empty)
-                    throw new ItemNotFoundException($"Category '{categoryName}' was not found");
-
-                // Add the category ID to the list
-                categoryIds.Add(categoryId);
-            }
-
-            // Adapt the product model
-            var result = product.Adapt<Product>();
-            result.Id = Guid.NewGuid();
-            result.CreatedAt = DateTime.Now;
-
-            // Save the product
-            await _unitOfWork.ProductRepository.AddAsync(result, cancellationToken);
-
-            // Add ProductQuantity
-            var productQuantityToInsert = new ProductQuantity
-            {
-                Id = Guid.NewGuid(),
-                ProductId = result.Id,
-                Quantity = product.Quantity,
-            };
-            await _unitOfWork.ProductQuantityRepository.AddAsync(productQuantityToInsert, cancellationToken);
-
-            // Insert into ProductCategory for each category ID
-            foreach (var categoryId in categoryIds)
-            {
-                var productCategoryToInsert = new ProductCategory
-                {
-                    Id = Guid.NewGuid(),
-                    ProductId = result.Id,
-                    CategoryId = categoryId
-                };
-                await _unitOfWork.ProductCategoryRepository.AddAsync(productCategoryToInsert, cancellationToken);
-            }
-
-            // Save changes
-            await _unitOfWork.SaveAsync();
-        }
-
-
         public async Task UpdateProductAsync(UpdateProductRequestModel product, Guid id, CancellationToken cancellationToken)
         {
 
@@ -123,6 +63,76 @@ namespace E_CommerceProduct.Infrastructure.Services
             var result = await _unitOfWork.ProductRepository.GetAllProductDetailsAsync(cancellationToken);
 
             return result;
+        }
+
+        public async Task CreateProductAsync(CreateProductRequestModel product, CancellationToken cancellationToken)
+        {
+            await ValidateProductName(product.Name, cancellationToken);
+
+            var categoryIds = await ValidateAndGetCategoryIdsAsync(product.CategoryNames, cancellationToken);
+
+            var newProduct = CreateProductEntity(product);
+
+            await SaveProductAsync(newProduct, product.Quantity, categoryIds, cancellationToken);
+        }
+
+        private async Task ValidateProductName(string productName, CancellationToken cancellationToken)
+        {
+            if (await _unitOfWork.ProductRepository.AnyAsync(x => x.Name == productName, cancellationToken))
+                throw new AlreadyExistsException("Product with this Name already exists");
+        }
+
+        private async Task<List<Guid>> ValidateAndGetCategoryIdsAsync(IEnumerable<string> categoryNames, CancellationToken cancellationToken)
+        {
+            var allCategories = await _unitOfWork.CategoryRepository.GetAllAsync(cancellationToken);
+            var categoryIds = new List<Guid>();
+
+            foreach (var categoryName in categoryNames)
+            {
+                var category = allCategories.FirstOrDefault(x => x.Name.ToString() == categoryName);
+
+                if (category == null)
+                    throw new ItemNotFoundException($"Category '{categoryName}' was not found");
+
+                categoryIds.Add(category.Id);
+            }
+
+            return categoryIds;
+        }
+
+        private Product CreateProductEntity(CreateProductRequestModel product)
+        {
+            var result = product.Adapt<Product>();
+            result.Id = Guid.NewGuid();
+            result.CreatedAt = DateTime.Now;
+
+            return result;
+        }
+
+        private async Task SaveProductAsync(Product product, int quantity, List<Guid> categoryIds, CancellationToken cancellationToken)
+        {
+            await _unitOfWork.ProductRepository.AddAsync(product, cancellationToken);
+
+            var productQuantity = new ProductQuantity
+            {
+                Id = Guid.NewGuid(),
+                ProductId = product.Id,
+                Quantity = quantity,
+            };
+            await _unitOfWork.ProductQuantityRepository.AddAsync(productQuantity, cancellationToken);
+
+            foreach (var categoryId in categoryIds)
+            {
+                var productCategory = new ProductCategory
+                {
+                    Id = Guid.NewGuid(),
+                    ProductId = product.Id,
+                    CategoryId = categoryId
+                };
+                await _unitOfWork.ProductCategoryRepository.AddAsync(productCategory, cancellationToken);
+            }
+
+            await _unitOfWork.SaveAsync();
         }
     }
 }
