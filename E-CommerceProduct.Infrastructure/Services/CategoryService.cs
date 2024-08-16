@@ -33,8 +33,9 @@ namespace E_CommerceProduct.Infrastructure.Services
 
         public async Task CreateCategoryAsync(CategoryRequestModel category, CancellationToken cancellationToken)
         {
+
             if (await _unitOfWork.CategoryRepository.AnyAsync(x => x.Name == category.Name, cancellationToken))
-                throw new AlreadyExistsException("Category with this Name already exist");
+                throw new AlreadyExistsException("Category with this Name already exists");
 
             var result = category.Adapt<Category>();
             result.Id = Guid.NewGuid();
@@ -51,7 +52,7 @@ namespace E_CommerceProduct.Infrastructure.Services
             var entity = category.Adapt<Category>();
             entity.Id = id;
             entity.Name = category.Name;
-
+            
             _unitOfWork.CategoryRepository.Update(entity, cancellationToken);
             await _unitOfWork.SaveAsync();
         }

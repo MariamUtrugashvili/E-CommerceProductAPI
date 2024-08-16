@@ -1,0 +1,970 @@
+2024-08-16 02:49:53.353 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 2:49:53 AM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = 
+
+2024-08-16 02:49:54.892 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 2:49:54 AM
+ResponseBody = 
+[{"id":"0287bb1c-24ec-4293-9d78-e31e95f9176c"
+"name":"Books"}
+{"id":"ba66f07f-480e-44c3-92ac-352e383b0f41"
+"name":"Clothing"}
+{"id":"af75b9b9-0dd5-4ccd-b7fb-13f0849a58ca"
+"name":"Electronics"}
+{"id":"af23dca3-6851-4331-a1bd-65dd88f6eb34"
+"name":"FoodAndBeverages"}
+{"id":"78b09766-b847-41e1-9ce7-de1227f3828a"
+"name":"Toys"}]
+
+
+2024-08-16 02:50:04.730 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 2:50:04 AM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = {
+  "name": "BabyProducts"
+}
+
+2024-08-16 02:50:05.681 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 2:50:05 AM
+ResponseBody = 
+No response body
+
+
+2024-08-16 02:53:31.781 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 2:53:31 AM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = {
+  "name": "BabyProducts"
+}
+
+2024-08-16 02:53:32.241 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 2:53:32 AM
+ResponseBody = 
+No response body
+
+
+2024-08-16 03:39:37.599 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:39:37 AM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:39:38.759 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:39:38 AM
+ResponseBody = 
+[{"id":"e01d53fd-2590-4bf6-8f03-d5ea75a6b700"
+"name":"Books"}
+{"id":"e889a37e-6882-472d-95be-4ecdc4206f1f"
+"name":"Clothing"}
+{"id":"4fc68872-822f-45ee-a5a1-334a06c675b2"
+"name":"Electronics"}
+{"id":"8a26da82-b02c-43b6-a7c6-6c7b9fb43492"
+"name":"FoodAndBeverages"}
+{"id":"78b09766-b847-41e1-9ce7-de1227f3828a"
+"name":"Toys"}]
+
+
+2024-08-16 03:39:58.506 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:39:58 AM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = {
+  "name": "BabyProducts"
+}
+
+2024-08-16 03:39:59.170 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:39:59 AM
+ResponseBody = 
+
+
+
+2024-08-16 03:40:03.305 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:40:03 AM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:40:03.343 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:40:03 AM
+ResponseBody = 
+[{"id":"05b90e41-d1ab-4440-b2b2-dd9d50682fbf"
+"name":"BabyProducts"}
+{"id":"e01d53fd-2590-4bf6-8f03-d5ea75a6b700"
+"name":"Books"}
+{"id":"e889a37e-6882-472d-95be-4ecdc4206f1f"
+"name":"Clothing"}
+{"id":"4fc68872-822f-45ee-a5a1-334a06c675b2"
+"name":"Electronics"}
+{"id":"8a26da82-b02c-43b6-a7c6-6c7b9fb43492"
+"name":"FoodAndBeverages"}
+{"id":"78b09766-b847-41e1-9ce7-de1227f3828a"
+"name":"Toys"}]
+
+
+2024-08-16 03:40:23.267 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:40:23 AM
+Address = https
+Path = /api/Category/78b09766-b847-41e1-9ce7-de1227f3828a
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:40:23.387 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:40:23 AM
+ResponseBody = 
+{"id":"78b09766-b847-41e1-9ce7-de1227f3828a"
+"name":"Toys"}
+
+
+2024-08-16 03:40:44.293 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:40:44 AM
+Address = https
+Path = /api/Category/05b90e41-d1ab-4440-b2b2-dd9d50682fbf
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:40:44.311 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:40:44 AM
+ResponseBody = 
+{"id":"05b90e41-d1ab-4440-b2b2-dd9d50682fbf"
+"name":"BabyProducts"}
+
+
+2024-08-16 03:41:09.682 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:41:09 AM
+Address = https
+Path = /api/Category/05b90e41-d1ab-4440-b2b2-dd9d50682fbf
+IsSecured = True
+RequestBody = {
+  "name": "Sports"
+}
+
+2024-08-16 03:41:09.739 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:41:09 AM
+ResponseBody = 
+
+
+
+2024-08-16 03:41:15.147 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:41:15 AM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:41:15.202 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:41:15 AM
+ResponseBody = 
+[{"id":"e01d53fd-2590-4bf6-8f03-d5ea75a6b700"
+"name":"Books"}
+{"id":"e889a37e-6882-472d-95be-4ecdc4206f1f"
+"name":"Clothing"}
+{"id":"4fc68872-822f-45ee-a5a1-334a06c675b2"
+"name":"Electronics"}
+{"id":"8a26da82-b02c-43b6-a7c6-6c7b9fb43492"
+"name":"FoodAndBeverages"}
+{"id":"05b90e41-d1ab-4440-b2b2-dd9d50682fbf"
+"name":"Sports"}
+{"id":"78b09766-b847-41e1-9ce7-de1227f3828a"
+"name":"Toys"}]
+
+
+2024-08-16 03:41:42.821 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:41:42 AM
+Address = https
+Path = /api/Category/05b90e41-d1ab-4440-b2b2-dd9d50682fbf
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:41:42.901 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:41:42 AM
+ResponseBody = 
+
+
+
+2024-08-16 03:41:48.524 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:41:48 AM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:41:48.531 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:41:48 AM
+ResponseBody = 
+[{"id":"e01d53fd-2590-4bf6-8f03-d5ea75a6b700"
+"name":"Books"}
+{"id":"e889a37e-6882-472d-95be-4ecdc4206f1f"
+"name":"Clothing"}
+{"id":"4fc68872-822f-45ee-a5a1-334a06c675b2"
+"name":"Electronics"}
+{"id":"8a26da82-b02c-43b6-a7c6-6c7b9fb43492"
+"name":"FoodAndBeverages"}
+{"id":"78b09766-b847-41e1-9ce7-de1227f3828a"
+"name":"Toys"}]
+
+
+2024-08-16 03:41:56.131 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:41:56 AM
+Address = https
+Path = /api/Product/Products
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:41:56.244 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:41:56 AM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4}]
+
+
+2024-08-16 03:42:04.880 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:42:04 AM
+Address = https
+Path = /api/Product/ProductDetails
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:42:05.019 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:42:05 AM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13
+"imageUrl":"https://th.bing.com/th/id/R.9584d55590a39c6f212d3df13891ccd5?rik=F9ZGN6wiD4KDGg&pid=ImgRaw&r=0"
+"categoryNames":[]}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6
+"imageUrl":"https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+"categoryNames":[]}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4
+"imageUrl":"https://th.bing.com/th/id/R.3310e21eed921fe5d03744ccb6ffef64?rik=o30X3PcLwLVbpA&pid=ImgRaw&r=0"
+"categoryNames":[]}]
+
+
+2024-08-16 03:42:31.059 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:42:31 AM
+Address = https
+Path = /api/Product/a79877fc-a24b-4883-92dc-3946b4cb0aa6
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:42:31.107 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:42:31 AM
+ResponseBody = 
+{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":120.00
+"quantity":13}
+
+
+2024-08-16 03:43:32.039 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:43:32 AM
+Address = https
+Path = /api/Product/a79877fc-a24b-4883-92dc-3946b4cb0aa6
+IsSecured = True
+RequestBody = {
+  "name": "Smartwatch",
+  "price": 100,
+  "imageUrl": "https://th.bing.com/th/id/R.9584d55590a39c6f212d3df13891ccd5?rik=F9ZGN6wiD4KDGg&pid=ImgRaw&r=0"
+}
+
+2024-08-16 03:43:32.227 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:43:32 AM
+ResponseBody = 
+
+
+
+2024-08-16 03:43:38.197 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:43:38 AM
+Address = https
+Path = /api/Product/ProductDetails
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:43:38.227 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:43:38 AM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":100.00
+"quantity":13
+"imageUrl":"https://th.bing.com/th/id/R.9584d55590a39c6f212d3df13891ccd5?rik=F9ZGN6wiD4KDGg&pid=ImgRaw&r=0"
+"categoryNames":[]}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6
+"imageUrl":"https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+"categoryNames":[]}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4
+"imageUrl":"https://th.bing.com/th/id/R.3310e21eed921fe5d03744ccb6ffef64?rik=o30X3PcLwLVbpA&pid=ImgRaw&r=0"
+"categoryNames":[]}]
+
+
+2024-08-16 03:44:35.157 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:44:35 AM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = {
+  "name": "BabyProducts"
+}
+
+2024-08-16 03:44:35.182 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:44:35 AM
+ResponseBody = 
+
+
+
+2024-08-16 03:45:22.512 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:45:22 AM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = {
+  "name": "Milk",
+  "price": 3,
+  "imageUrl": "https://th.bing.com/th/id/OSK.HEROYeXAVJkpUhbzwfZSLTVavNxcuAiBlYC11vqRLgZ8NqQ?rs=1&pid=ImgDetMain",
+  "quantity": -1,
+  "categoryNames": [
+    "Beauty"
+  ]
+}
+
+2024-08-16 03:45:22.707 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:45:22 AM
+ResponseBody = 
+{"type":"https://tools.ietf.org/html/rfc9110#section-15.5.1"
+"title":"One or more validation errors occurred."
+"status":400
+"errors":{"Quantity":["Quantity must be greater than 0."]}
+"traceId":"00-4c95ca2b60df9e45dfb064e8c13fe999-6fdc1b8b56dbc5d8-00"}
+
+
+2024-08-16 03:45:39.231 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:45:39 AM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = {
+  "name": "Milk",
+  "price": 3,
+  "imageUrl": "https://th.bing.com/th/id/OSK.HEROYeXAVJkpUhbzwfZSLTVavNxcuAiBlYC11vqRLgZ8NqQ?rs=1&pid=ImgDetMain",
+  "quantity": 15,
+  "categoryNames": [
+    "Beauty"
+  ]
+}
+
+2024-08-16 03:45:39.587 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:45:39 AM
+ResponseBody = 
+
+
+
+2024-08-16 03:48:35.086 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:48:35 AM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = {
+  "name": "Milk",
+  "price": 3,
+  "imageUrl": "https://th.bing.com/th/id/OSK.HEROYeXAVJkpUhbzwfZSLTVavNxcuAiBlYC11vqRLgZ8NqQ?rs=1&pid=ImgDetMain",
+  "quantity": 15,
+  "categoryNames": [
+    "Beauty"
+  ]
+}
+
+2024-08-16 03:48:51.022 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:48:51 AM
+ResponseBody = 
+No response body
+
+
+2024-08-16 03:49:00.828 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:49:00 AM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = {
+  "name": "Bread",
+  "price": 3,
+  "imageUrl": "https://th.bing.com/th/id/OSK.HEROYeXAVJkpUhbzwfZSLTVavNxcuAiBlYC11vqRLgZ8NqQ?rs=1&pid=ImgDetMain",
+  "quantity": 15,
+  "categoryNames": [
+    "Beauty"
+  ]
+}
+
+2024-08-16 03:51:43.031 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:51:43 AM
+Address = https
+Path = /api/Product/Products
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:51:44.042 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:51:44 AM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":100.00
+"quantity":13}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6}
+{"id":"b1b7ea36-0bb0-4692-908e-97d104b5c347"
+"name":"Milk"
+"price":3.00
+"quantity":15}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4}]
+
+
+2024-08-16 03:52:01.180 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:52:01 AM
+Address = https
+Path = /api/Product/B1B7EA36-0BB0-4692-908E-97D104B5C347
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:52:01.794 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:52:01 AM
+ResponseBody = 
+
+
+
+2024-08-16 03:52:06.436 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:52:06 AM
+Address = https
+Path = /api/Product/Products
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:52:06.466 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:52:06 AM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":100.00
+"quantity":13}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4}]
+
+
+2024-08-16 03:52:37.971 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:52:37 AM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = {
+  "name": "Milk",
+  "price": 3,
+  "imageUrl": "https://th.bing.com/th/id/OSK.HEROYeXAVJkpUhbzwfZSLTVavNxcuAiBlYC11vqRLgZ8NqQ?rs=1&pid=ImgDetMain",
+  "quantity": 20,
+  "categoryNames": [
+    "beauty"
+  ]
+}
+
+2024-08-16 03:52:41.085 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:52:41 AM
+ResponseBody = 
+No response body
+
+
+2024-08-16 03:54:56.096 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:54:56 AM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = {
+  "name": "Milk",
+  "price": 3,
+  "imageUrl": "https://th.bing.com/th/id/OSK.HEROYeXAVJkpUhbzwfZSLTVavNxcuAiBlYC11vqRLgZ8NqQ?rs=1&pid=ImgDetMain",
+  "quantity": 20,
+  "categoryNames": [
+    "beauty"
+  ]
+}
+
+2024-08-16 03:55:00.971 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:55:00 AM
+ResponseBody = 
+No response body
+
+
+2024-08-16 03:57:00.597 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:57:00 AM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = {
+  "name": "Milk",
+  "price": 3,
+  "imageUrl": "https://th.bing.com/th/id/OSK.HEROYeXAVJkpUhbzwfZSLTVavNxcuAiBlYC11vqRLgZ8NqQ?rs=1&pid=ImgDetMain",
+  "quantity": 20,
+  "categoryNames": [
+    "beauty"
+  ]
+}
+
+2024-08-16 03:57:01.951 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:57:01 AM
+ResponseBody = 
+No response body
+
+
+2024-08-16 03:57:12.403 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:57:12 AM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:57:12.749 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:57:12 AM
+ResponseBody = 
+[{"id":"dffdae45-9ea4-4d05-9bb8-66f6b65df277"
+"name":"BabyProducts"}
+{"id":"e01d53fd-2590-4bf6-8f03-d5ea75a6b700"
+"name":"Books"}
+{"id":"e889a37e-6882-472d-95be-4ecdc4206f1f"
+"name":"Clothing"}
+{"id":"4fc68872-822f-45ee-a5a1-334a06c675b2"
+"name":"Electronics"}
+{"id":"8a26da82-b02c-43b6-a7c6-6c7b9fb43492"
+"name":"FoodAndBeverages"}
+{"id":"78b09766-b847-41e1-9ce7-de1227f3828a"
+"name":"Toys"}]
+
+
+2024-08-16 03:57:48.515 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:57:48 AM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = {
+  "name": "Milk",
+  "price": 3,
+  "imageUrl": "https://th.bing.com/th/id/OSK.HEROYeXAVJkpUhbzwfZSLTVavNxcuAiBlYC11vqRLgZ8NqQ?rs=1&pid=ImgDetMain",
+  "quantity": 20,
+  "categoryNames": [
+    "BabyProducts","Beauty"
+  ]
+}
+
+2024-08-16 03:57:48.751 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:57:48 AM
+ResponseBody = 
+No response body
+
+
+2024-08-16 03:57:57.470 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:57:57 AM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = {
+  "name": "Milk",
+  "price": 3,
+  "imageUrl": "https://th.bing.com/th/id/OSK.HEROYeXAVJkpUhbzwfZSLTVavNxcuAiBlYC11vqRLgZ8NqQ?rs=1&pid=ImgDetMain",
+  "quantity": 20,
+  "categoryNames": [
+    "BabyProducts","FoodAndBeverages"
+  ]
+}
+
+2024-08-16 03:57:57.997 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:57:57 AM
+ResponseBody = 
+
+
+
+2024-08-16 03:58:15.863 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:58:15 AM
+Address = https
+Path = /api/Product/Products
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:58:16.060 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:58:16 AM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":100.00
+"quantity":13}
+{"id":"59bba750-d992-4fe8-98c7-8ffbb0802e56"
+"name":"Milk"
+"price":3.00
+"quantity":20}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4}]
+
+
+2024-08-16 03:58:28.006 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:58:28 AM
+Address = https
+Path = /api/ProductCategory/59bba750-d992-4fe8-98c7-8ffbb0802e56
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:58:28.069 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:58:28 AM
+ResponseBody = 
+[{"id":"6814d563-29f3-4402-b993-6ddd6f45bfbf"
+"productName":"Milk"
+"categoryNames":["BabyProducts"]}
+{"id":"9eb7d8eb-54b5-4c95-9b61-e82f725c2497"
+"productName":"Milk"
+"categoryNames":["FoodAndBeverages"]}]
+
+
+2024-08-16 03:59:09.018 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:59:09 AM
+Address = https
+Path = /api/ProductCategory/6814d563-29f3-4402-b993-6ddd6f45bfbf
+IsSecured = True
+RequestBody = {
+  "newCategory": "Beauty"
+}
+
+2024-08-16 03:59:09.324 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:59:09 AM
+ResponseBody = 
+No response body
+
+
+2024-08-16 03:59:16.126 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:59:16 AM
+Address = https
+Path = /api/ProductCategory/6814d563-29f3-4402-b993-6ddd6f45bfbf
+IsSecured = True
+RequestBody = {
+  "newCategory": "Toys"
+}
+
+2024-08-16 03:59:16.203 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:59:16 AM
+ResponseBody = 
+
+
+
+2024-08-16 03:59:21.089 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:59:21 AM
+Address = https
+Path = /api/ProductCategory/59bba750-d992-4fe8-98c7-8ffbb0802e56
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:59:21.108 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:59:21 AM
+ResponseBody = 
+[{"id":"9eb7d8eb-54b5-4c95-9b61-e82f725c2497"
+"productName":"Milk"
+"categoryNames":["FoodAndBeverages"]}
+{"id":"6814d563-29f3-4402-b993-6ddd6f45bfbf"
+"productName":"Milk"
+"categoryNames":["Toys"]}]
+
+
+2024-08-16 03:59:33.213 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 3:59:33 AM
+Address = https
+Path = /api/ProductQuantity/ProductQuantities
+IsSecured = True
+RequestBody = 
+
+2024-08-16 03:59:33.256 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 3:59:33 AM
+ResponseBody = 
+[{"id":"f48dca5c-009e-4372-8647-1ae6646a7ff0"
+"productId":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"quantity":6}
+{"id":"a422642b-2b8b-4b3b-9a89-f7fbacd97469"
+"productId":"59bba750-d992-4fe8-98c7-8ffbb0802e56"
+"name":"Milk"
+"quantity":20}
+{"id":"26049960-fcfa-4b8e-ba21-5dec077ad290"
+"productId":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"quantity":13}
+{"id":"3a14cece-82bb-4d71-96f7-bc40ea06eab3"
+"productId":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"quantity":4}]
+
+
+2024-08-16 04:00:14.221 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 4:00:14 AM
+Address = https
+Path = /api/ProductQuantity/a422642b-2b8b-4b3b-9a89-f7fbacd97469
+IsSecured = True
+RequestBody = {
+  "productId": "59bba750-d992-4fe8-98c7-8ffbb0802e56",
+  "quantity": 10
+}
+
+2024-08-16 04:00:14.307 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 4:00:14 AM
+ResponseBody = 
+
+
+
+2024-08-16 04:05:58.020 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 4:05:57 AM
+Address = https
+Path = /api/Product/ProductDetails
+IsSecured = True
+RequestBody = 
+
+2024-08-16 04:05:59.313 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 4:05:59 AM
+ResponseBody = 
+[{"id":"a79877fc-a24b-4883-92dc-3946b4cb0aa6"
+"name":"Smartwatch"
+"price":100.00
+"quantity":13
+"imageUrl":"https://th.bing.com/th/id/R.9584d55590a39c6f212d3df13891ccd5?rik=F9ZGN6wiD4KDGg&pid=ImgRaw&r=0"
+"categoryNames":[]}
+{"id":"59bba750-d992-4fe8-98c7-8ffbb0802e56"
+"name":"Milk"
+"price":3.00
+"quantity":10
+"imageUrl":"https://th.bing.com/th/id/OSK.HEROYeXAVJkpUhbzwfZSLTVavNxcuAiBlYC11vqRLgZ8NqQ?rs=1&pid=ImgDetMain"
+"categoryNames":["Toys"
+"FoodAndBeverages"]}
+{"id":"78eff409-40d8-458d-8705-979b7d2df126"
+"name":"kindle paperwhite"
+"price":150.00
+"quantity":6
+"imageUrl":"https://9to5toys.com/wp-content/uploads/sites/5/2021/10/Kindle-Paperwhite-5-lead.jpg?resize=600"
+"categoryNames":[]}
+{"id":"f8816abe-284f-49fe-8a52-d01d438ce2c5"
+"name":"USB Flash Drive"
+"price":20.00
+"quantity":4
+"imageUrl":"https://th.bing.com/th/id/R.3310e21eed921fe5d03744ccb6ffef64?rik=o30X3PcLwLVbpA&pid=ImgRaw&r=0"
+"categoryNames":[]}]
+
+
+2024-08-16 04:06:17.649 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 4:06:17 AM
+Address = https
+Path = /api/Order
+IsSecured = True
+RequestBody = {
+  "orderItems": [
+    {
+      "productName": "Milk",
+      "quantity": 3
+    }
+  ]
+}
+
+2024-08-16 04:06:18.726 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 4:06:18 AM
+ResponseBody = 
+{"message":"Order created successfully."}
+
+
+2024-08-16 04:10:25.181 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 4:10:25 AM
+Address = https
+Path = /api/Category
+IsSecured = True
+RequestBody = 
+
+2024-08-16 04:10:26.388 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 4:10:26 AM
+ResponseBody = 
+[{"id":"dffdae45-9ea4-4d05-9bb8-66f6b65df277"
+"name":"BabyProducts"}
+{"id":"e01d53fd-2590-4bf6-8f03-d5ea75a6b700"
+"name":"Books"}
+{"id":"e889a37e-6882-472d-95be-4ecdc4206f1f"
+"name":"Clothing"}
+{"id":"4fc68872-822f-45ee-a5a1-334a06c675b2"
+"name":"Electronics"}
+{"id":"8a26da82-b02c-43b6-a7c6-6c7b9fb43492"
+"name":"FoodAndBeverages"}
+{"id":"78b09766-b847-41e1-9ce7-de1227f3828a"
+"name":"Toys"}]
+
+
+2024-08-16 04:10:40.749 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 4:10:40 AM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = {
+  "name": "Bread",
+  "price": 1.20,
+  "imageUrl": "https://th.bing.com/th/id/R.d3b0d299c663a628a4263a7cb70fc4ba?rik=DI1Nn3CMB2jk3g&pid=ImgRaw&r=0",
+  "quantity": 50,
+  "categoryNames": [
+    "FoodAndBeverages","Beauty"
+  ]
+}
+
+2024-08-16 04:10:42.000 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 4:10:42 AM
+ResponseBody = 
+No response body
+
+
+2024-08-16 04:11:02.435 +04:00 [INF] 
+-------------------------------------------------
+IP = ::1
+Time = 8/16/2024 4:11:02 AM
+Address = https
+Path = /api/Product
+IsSecured = True
+RequestBody = {
+  "name": "Bread",
+  "price": 1.20,
+  "imageUrl": "https://th.bing.com/th/id/R.d3b0d299c663a628a4263a7cb70fc4ba?rik=DI1Nn3CMB2jk3g&pid=ImgRaw&r=0",
+  "quantity": 50,
+  "categoryNames": [
+    "FoodAndBeverages","BabyProducts"
+  ]
+}
+
+2024-08-16 04:11:03.100 +04:00 [INF] -RESPONSE:
+Time = 8/16/2024 4:11:03 AM
+ResponseBody = 
+
+
+

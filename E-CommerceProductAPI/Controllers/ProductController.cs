@@ -1,5 +1,4 @@
-﻿using E_CommerceProduct.Application.ProductCategories.Request;
-using E_CommerceProduct.Application.Products.Request;
+﻿using E_CommerceProduct.Application.Products.Request;
 using E_CommerceProduct.Application.Products.Response;
 using E_CommerceProduct.Application.Services;
 using Microsoft.AspNetCore.Mvc;

@@ -17,10 +17,10 @@ namespace E_CommerceProduct.Infrastructure.Repositories
                                    .Include(pq => pq.Product)
                                      .Select(pq => new ProductQuantitiesResponseModel
                                      {
-                                         Id = pq.Id, 
+                                         Id = pq.Id,
                                          ProductId = pq.Product.Id,
-                                         Name = pq.Product.Name, 
-                                         Quantity = pq.Quantity 
+                                         Name = pq.Product.Name,
+                                         Quantity = pq.Quantity
                                      })
                                      .ToListAsync(cancellationToken);
 

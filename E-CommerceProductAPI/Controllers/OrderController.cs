@@ -18,19 +18,8 @@ namespace E_CommerceProductAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateOrder([FromBody] CreateOrderRequestModel request, CancellationToken cancellationToken)
         {
-            try
-            {
-                await _orderService.CreateOrderAsync(request, cancellationToken);
-                return Ok(new { Message = "Order created successfully." });
-            }
-            catch (InvalidOperationException ex)
-            {
-                return BadRequest(new { Message = ex.Message });
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, new { Message = "An unexpected error occurred.", Details = ex.Message });
-            }
+            await _orderService.CreateOrderAsync(request, cancellationToken);
+            return Ok(new { Message = "Order created successfully." });
         }
     }
 }
